@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FDSNStationXML xmlns="http://www.fdsn.org/xml/station/1" schemaVersion="1.1">
+  <Source>RESIF-SI</Source>
+  <Sender>RESIF-DC</Sender>
+  <Module>RESIF WEB SERVICE: fdsnws-station | version: 1.1.1 </Module>
+  <ModuleURI>http://ws.resif.fr/fdsnws/station/1/query?network=G&amp;station=CCD%2CDRV&amp;location=00&amp;channel=BHZ%2CEHZ%2CHHZ&amp;level=channel</ModuleURI>
+  <Created>2021-07-07T21:12:19.000000Z</Created>
+  <Network code="G" startDate="1982-01-01T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" alternateCode="GEOSCOPE">
+    <Description>French Global Network of Seismological Broadband Stations</Description>
+    <Identifier type="DOI">10.18715/GEOSCOPE.G</Identifier>
+    <Comment>
+      <Value>DOI:http://dx.doi.org/10.18715/GEOSCOPE.G</Value>
+    </Comment>
+    <TotalNumberStations>54</TotalNumberStations>
+    <SelectedNumberStations>2</SelectedNumberStations>
+    <Station code="CCD" startDate="2007-01-01T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
+      <Latitude datum="WGS84" unit="DEGREES">-75.1065</Latitude>
+      <Longitude datum="WGS84" unit="DEGREES">123.305</Longitude>
+      <Elevation>3240.0</Elevation>
+      <Site>
+        <Name>Concordia Base, Dome C, Antartica</Name>
+      </Site>
+      <Operator>
+        <Agency>Observatoire GEOSCOPE</Agency>
+        <WebSite>http://geoscope.ipgp.fr</WebSite>
+      </Operator>
+      <Operator>
+        <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
+        <WebSite>https://eost.unistra.fr</WebSite>
+      </Operator>
+      <Operator>
+        <Agency>Institut Polaire Français Paul-Emile Victor (IPEV)</Agency>
+        <WebSite>https://www.institut-polaire.fr</WebSite>
+      </Operator>
+      <Operator>
+        <Agency>Programma Nazionale di Ricerche in Antartide (PNRA)</Agency>
+        <WebSite>https://www.italiantartide.it</WebSite>
+      </Operator>
+      <Operator>
+        <Agency>Istituto Nazionale di Geofisica e Vulcanologia (INGV)</Agency>
+        <WebSite>http://www.ingv.it</WebSite>
+      </Operator>
+      <CreationDate>2007-01-01T00:00:00.000000Z</CreationDate>
+      <TotalNumberChannels>24</TotalNumberChannels>
+      <SelectedNumberChannels>2</SelectedNumberChannels>
+      <Channel code="BHZ" startDate="2008-12-31T23:59:59.000000Z" endDate="2010-01-01T00:00:01.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>Occasional spikes in data</Value>
+          <BeginEffectiveTime>2009-01-01T00:00:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2016-12-31T23:59:59.000000Z</EndEffectiveTime>
+        </Comment>
+        <Latitude unit="DEGREES">-75.1065</Latitude>
+        <Longitude unit="DEGREES">123.305</Longitude>
+        <Elevation>3240.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">20.0</SampleRate>
+        <ClockDrift unit="SECONDS/SAMPLE">5e-06</ClockDrift>
+        <Sensor>
+          <Description>STRECKEISEN STS2</Description>
+        </Sensor>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>629145000.0</Value>
+            <Frequency>0.03</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>VELOCITY in Meters Per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>DIGITAL UNIT in Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="BHZ" startDate="2010-02-01T07:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>Data quality is poor.</Value>
+          <BeginEffectiveTime>2014-09-12T16:00:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2014-09-12T23:00:00.000000Z</EndEffectiveTime>
+        </Comment>
+        <Comment>
+          <Value>Occasional spikes in data</Value>
+          <BeginEffectiveTime>2009-01-01T00:00:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2016-12-31T23:59:59.000000Z</EndEffectiveTime>
+        </Comment>
+        <Comment>
+          <Value>Sensor calibration in progress</Value>
+          <BeginEffectiveTime>2016-06-06T02:15:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2016-06-07T02:30:00.000000Z</EndEffectiveTime>
+        </Comment>
+        <Comment>
+          <Value>Sensor calibration in progress</Value>
+          <BeginEffectiveTime>2016-09-28T06:45:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2016-09-29T07:00:00.000000Z</EndEffectiveTime>
+        </Comment>
+        <Comment>
+          <Value>Sensor calibration in progress</Value>
+          <BeginEffectiveTime>2017-01-06T03:16:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2017-01-07T07:00:00.000000Z</EndEffectiveTime>
+        </Comment>
+        <Comment>
+          <Value>Maintenance in progress</Value>
+          <BeginEffectiveTime>2017-12-21T01:07:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2017-12-22T04:06:00.000000Z</EndEffectiveTime>
+        </Comment>
+        <Comment>
+          <Value>Mass centering in progress</Value>
+          <BeginEffectiveTime>2018-12-29T02:00:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2019-01-04T01:42:00.000000Z</EndEffectiveTime>
+        </Comment>
+        <Comment>
+          <Value>Mass centering in progress</Value>
+          <BeginEffectiveTime>2019-08-30T16:30:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2019-09-03T04:00:00.000000Z</EndEffectiveTime>
+        </Comment>
+        <Comment>
+          <Value>Sensor calibration in progress</Value>
+          <BeginEffectiveTime>2019-12-14T07:40:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2019-12-15T10:00:00.000000Z</EndEffectiveTime>
+        </Comment>
+        <Latitude unit="DEGREES">-75.1065</Latitude>
+        <Longitude unit="DEGREES">123.305</Longitude>
+        <Elevation>3240.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">20.0</SampleRate>
+        <ClockDrift unit="SECONDS/SAMPLE">5e-06</ClockDrift>
+        <Sensor>
+          <Description>NANOMETRICS Trillium 240</Description>
+        </Sensor>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>501890000.0</Value>
+            <Frequency>0.03</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>VELOCITY in Meters Per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>DIGITAL UNIT in Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="DRV" startDate="1986-02-01T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
+      <Comment>
+        <Value>Sensors responses contain nominal values.</Value>
+        <BeginEffectiveTime>1986-02-01T00:00:00.000000Z</BeginEffectiveTime>
+      </Comment>
+      <Comment>
+        <Value>Error on sensors poles may reach 2 percent.</Value>
+        <BeginEffectiveTime>1986-02-01T00:00:00.000000Z</BeginEffectiveTime>
+      </Comment>
+      <Comment>
+        <Value>Occasional spikes in data</Value>
+        <BeginEffectiveTime>2009-06-16T03:00:00.000000Z</BeginEffectiveTime>
+        <EndEffectiveTime>2009-06-19T00:00:00.000000Z</EndEffectiveTime>
+      </Comment>
+      <Comment>
+        <Value>Occasional data loss</Value>
+        <BeginEffectiveTime>1986-02-08T05:00:00.000000Z</BeginEffectiveTime>
+        <EndEffectiveTime>1987-12-31T23:59:59.000000Z</EndEffectiveTime>
+      </Comment>
+      <Comment>
+        <Value>Occasional data loss</Value>
+        <BeginEffectiveTime>1995-01-14T22:00:00.000000Z</BeginEffectiveTime>
+        <EndEffectiveTime>1995-01-15T08:00:00.000000Z</EndEffectiveTime>
+      </Comment>
+      <Comment>
+        <Value>Occasional data loss</Value>
+        <BeginEffectiveTime>1996-03-17T00:00:00.000000Z</BeginEffectiveTime>
+        <EndEffectiveTime>1996-03-18T00:00:00.000000Z</EndEffectiveTime>
+      </Comment>
+      <Latitude datum="WGS84" unit="DEGREES">-66.664908</Latitude>
+      <Longitude datum="WGS84" unit="DEGREES">140.002069</Longitude>
+      <Elevation>40.0</Elevation>
+      <Site>
+        <Name>Dumont d'Urville - Terre Adelie, Antarctica</Name>
+      </Site>
+      <Operator>
+        <Agency>Observatoire GEOSCOPE</Agency>
+        <WebSite>http://geoscope.ipgp.fr</WebSite>
+      </Operator>
+      <Operator>
+        <Agency>Ecole et Observatoire des sciences de la Terre (EOST)</Agency>
+        <WebSite>https://eost.unistra.fr</WebSite>
+      </Operator>
+      <Operator>
+        <Agency>Institut Polaire Français Paul-Emile Victor (IPEV)</Agency>
+        <WebSite>https://www.institut-polaire.fr</WebSite>
+      </Operator>
+      <Operator>
+        <Agency>Terres Australes et Antarctiques Françaises (TAAF)</Agency>
+        <WebSite>https://taaf.fr</WebSite>
+      </Operator>
+      <CreationDate>1986-02-01T00:00:00.000000Z</CreationDate>
+      <TotalNumberChannels>57</TotalNumberChannels>
+      <SelectedNumberChannels>4</SelectedNumberChannels>
+      <Channel code="BHZ" startDate="1999-01-07T00:00:00.000000Z" endDate="2002-12-18T00:00:00.000000Z" restrictedStatus="open" locationCode="00">
+        <Latitude unit="DEGREES">-66.664908</Latitude>
+        <Longitude unit="DEGREES">140.002069</Longitude>
+        <Elevation>40.0</Elevation>
+        <Depth>4.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">20.0</SampleRate>
+        <ClockDrift unit="SECONDS/SAMPLE">5e-06</ClockDrift>
+        <Sensor>
+          <Description>STRECKEISEN STS1</Description>
+        </Sensor>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>937565000.0</Value>
+            <Frequency>0.01</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>VELOCITY in Meters Per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>DIGITAL UNIT in Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="BHZ" startDate="2002-12-18T00:00:00.000000Z" endDate="2010-02-06T04:50:00.000000Z" restrictedStatus="open" locationCode="00">
+        <Latitude unit="DEGREES">-66.664908</Latitude>
+        <Longitude unit="DEGREES">140.002069</Longitude>
+        <Elevation>40.0</Elevation>
+        <Depth>4.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">20.0</SampleRate>
+        <ClockDrift unit="SECONDS/SAMPLE">5e-06</ClockDrift>
+        <Sensor>
+          <Description>STRECKEISEN STS1</Description>
+        </Sensor>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>961712000.0</Value>
+            <Frequency>0.01</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>VELOCITY in Meters Per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>DIGITAL UNIT in Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="BHZ" startDate="2010-02-06T11:30:00.000000Z" endDate="2013-01-01T05:30:00.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>Sensor replacement</Value>
+          <BeginEffectiveTime>2013-01-01T05:30:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2013-01-01T06:00:00.000000Z</EndEffectiveTime>
+        </Comment>
+        <Comment>
+          <Value>Digitizer replacement</Value>
+          <BeginEffectiveTime>2013-01-01T05:30:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2013-01-01T06:00:00.000000Z</EndEffectiveTime>
+        </Comment>
+        <Latitude unit="DEGREES">-66.664908</Latitude>
+        <Longitude unit="DEGREES">140.002069</Longitude>
+        <Elevation>40.0</Elevation>
+        <Depth>4.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">20.0</SampleRate>
+        <ClockDrift unit="SECONDS/SAMPLE">5e-06</ClockDrift>
+        <Sensor>
+          <Description>STRECKEISEN STS2</Description>
+        </Sensor>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>653341000.0</Value>
+            <Frequency>0.02</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>VELOCITY in Meters Per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>DIGITAL UNIT in Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="BHZ" startDate="2013-01-01T06:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>Sensor replacement</Value>
+          <BeginEffectiveTime>2013-01-01T05:30:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2013-01-01T06:00:00.000000Z</EndEffectiveTime>
+        </Comment>
+        <Comment>
+          <Value>Digitizer replacement</Value>
+          <BeginEffectiveTime>2013-01-01T05:30:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2013-01-01T06:00:00.000000Z</EndEffectiveTime>
+        </Comment>
+        <Latitude unit="DEGREES">-66.664908</Latitude>
+        <Longitude unit="DEGREES">140.002069</Longitude>
+        <Elevation>40.0</Elevation>
+        <Depth>4.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">20.0</SampleRate>
+        <ClockDrift unit="SECONDS/SAMPLE">5e-06</ClockDrift>
+        <Sensor>
+          <Description>STRECKEISEN STS1 + METROZET E300 Electronics</Description>
+        </Sensor>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>1381200000.0</Value>
+            <Frequency>0.02</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>VELOCITY in Meters Per Second</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>counts</Name>
+              <Description>DIGITAL UNIT in Counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
+  </Network>
+</FDSNStationXML>
