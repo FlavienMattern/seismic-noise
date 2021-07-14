@@ -1,8 +1,8 @@
-from urllib.request import urlopen
+import urllib.request
 from zipfile import ZipFile
 import os
 import pandas as pd
-import os
+import json
 os.environ['PROJ_LIB'] = '/home/flavien/anaconda3/envs/SeismicNoise/share/proj'
 from mpl_toolkits.basemap import Basemap
 import numpy as np
@@ -21,7 +21,7 @@ def load_google_mobility(data_path = "DATA/google_mobility",
     ├  data_url      : URL du fichier ZIP contenant les données
     ├  download_data : Télécharger (True) ou charge des donnes existantes (False)
     ├  country_code  : Code du pays ("FR" pour France)
-    ├  data_type     : Récupérer les données de tout le pays ("global"), ou les données par région ("local")
+    ├  data_type     : Récupérer les données de tout le pays ("country"), ou les données par région ("region")
     
     ├─ OUTPUT ─┤
     ├ data_all       : DataFrame contenant l'ensemble des données
@@ -30,12 +30,12 @@ def load_google_mobility(data_path = "DATA/google_mobility",
     # Téléchargement des données
     if download_data:
 
-        request = urlopen(data_url)
+        request = urllib.request.urlopen(data_url)
         zipfile = open(data_path+"/data.zip", "wb")
         zipfile.write(request.read())
         zipfile.close()
         zipfile = ZipFile(data_path+"/data.zip")
-        zipfile.extract(path=data_path)
+        zipfile.extractall(path=data_path)
         zipfile.close()
 
         
@@ -59,9 +59,9 @@ def load_google_mobility(data_path = "DATA/google_mobility",
                                     "workplaces_percent_change_from_baseline": "workplaces",
                                     "residential_percent_change_from_baseline": "residential"})
 
-        if data_type == "global":
+        if data_type == "country":
             data = data[data['sub_region_1'].isnull()]
-        elif data_type == "local":
+        elif data_type == "region":
             data = data[data['sub_region_1'].notnull()]
 
         data['date'] = pd.to_datetime(data['date'])
@@ -75,6 +75,102 @@ def load_google_mobility(data_path = "DATA/google_mobility",
             data_all = pd.concat([data_all, data])
 
     return data_all
+
+
+
+def load_apple_mobility(data_path = "DATA/apple_mobility",
+                        json_url = "https://covid19-static.cdn-apple.com/covid19-mobility-data/current/v3/index.json",
+                        download_data = False,
+                        country = "France",
+                        data_type = "country"):
+    """
+    ├─ DESCRIPTION ─┤
+    ├ Récupération des données de mobilités fournies par Apple sous la forme d'un DataFrame.
+    
+    ├─ INPUT ─┤
+    ├  data_path     : Emplacement des données en local
+    ├  json_url      : URL du fichier json permettant de récupérer le dernier URL à jour
+    ├  download_data : Télécharger (True) ou charge des donnes existantes (False)
+    ├  country       : Nom du pays
+    ├  data_type     : Récupérer les données de tout le pays ("country"), par région ("region"), ou par ville ("city")
+    
+    ├─ OUTPUT ─┤
+    ├ data_all       : DataFrame contenant l'ensemble des données
+    """
+
+    # Téléchargement des données
+    if download_data:
+        with urllib.request.urlopen(json_url) as url:
+            json_data = json.loads(url.read().decode())
+        data_url = "https://covid19-static.cdn-apple.com" + json_data['basePath'] + json_data['regions']['en-us']['csvPath']
+        urllib.request.urlretrieve(data_url, data_path + '/apple_mobility.csv')
+        
+    # Lecture des données
+    data = pd.read_csv(data_path + '/apple_mobility.csv')
+    
+    if data_type == "country":
+        data = data.loc[ (data["region"] == "France") & (data["geo_type"] == "country/region") ]  # France entière
+        data = data.drop(columns=['geo_type', 'region', 'alternative_name', 'sub-region', 'country'])
+        data_value = data.values[:,1:].T
+        data_type = data.values[:,0]
+        dates = pd.to_datetime(data.columns[1:])
+        data = pd.DataFrame(np.array(data_value), columns=data_type)
+        data = data.set_axis(dates, axis=0)
+        data_all = data
+    
+    elif data_type == "region":
+        data = data.loc[ (data["country"] == "France") & (data["geo_type"] == "sub-region") ]  # Régions
+        data = data.drop(columns=['geo_type', 'alternative_name', 'sub-region', 'country'])
+        rg_name = list(set(data["region"]))
+        data_all = pd.DataFrame(columns=['region', 'driving', 'walking', 'transit'])
+        for rg in rg_name:
+            sub_data = data.loc[ data["region"] == rg ]
+            type_list = []
+            for row in sub_data.iterrows():
+                type_list = type_list + [row[1][1]] 
+            if not any("driving" in s for s in type_list):
+                sub_data = sub_data.append({'region': rg, 'transportation_type': 'driving'}, ignore_index=True)
+            if not any("walking" in s for s in type_list):
+                sub_data = sub_data.append({'region': rg, 'transportation_type': 'walking'}, ignore_index=True)
+            if not any("transit" in s for s in type_list):
+                sub_data = sub_data.append({'region': rg, 'transportation_type': 'transit'}, ignore_index=True)
+            data_value = sub_data.values[:,2:].T
+            data_type = sub_data.values[:,1]
+            dates = pd.to_datetime(sub_data.columns[2:])
+            sub_data = pd.DataFrame(np.array(data_value), columns=data_type)
+            sub_data = sub_data.set_axis(dates, axis=0)
+            sub_data["region"] = [rg] * len(data_value)
+            sub_data = sub_data[["region", "driving", "walking", "transit"]]
+            data_all = pd.concat([data_all, sub_data])
+            
+    elif data_type == "city":
+        data = data.loc[ (data["country"] == "France") & (data["geo_type"] == "city") ]  # Villes
+        data = data.drop(columns=['geo_type', 'alternative_name', 'sub-region', 'country'])
+        data = data.rename(columns={"region": "city"})
+        city_name = list(set(data["city"]))
+        data_all = pd.DataFrame(columns=['city', 'driving', 'walking', 'transit'])
+        for city in city_name:
+            sub_data = data.loc[ data["city"] == city ]
+            type_list = []
+            for row in sub_data.iterrows():
+                type_list = type_list + [row[1][1]] 
+            if not any("driving" in s for s in type_list):
+                sub_data = sub_data.append({'city': city, 'transportation_type': 'driving'}, ignore_index=True)
+            if not any("walking" in s for s in type_list):
+                sub_data = sub_data.append({'city': city, 'transportation_type': 'walking'}, ignore_index=True)
+            if not any("transit" in s for s in type_list):
+                sub_data = sub_data.append({'city': city, 'transportation_type': 'transit'}, ignore_index=True)
+            data_value = sub_data.values[:,2:].T
+            data_type = sub_data.values[:,1]
+            dates = pd.to_datetime(sub_data.columns[2:])
+            sub_data = pd.DataFrame(np.array(data_value), columns=data_type)
+            sub_data = sub_data.set_axis(dates, axis=0)
+            sub_data["city"] = [city] * len(data_value)
+            sub_data = sub_data[["city", "driving", "walking", "transit"]]
+            data_all = pd.concat([data_all, sub_data])
+    
+    return data_all
+        
 
 def create_map(latmin=41, latmax=52,
                lonmin=-5, lonmax=11,
