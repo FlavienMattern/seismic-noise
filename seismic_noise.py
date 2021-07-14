@@ -35,7 +35,7 @@ def load_google_mobility(data_path = "DATA/google_mobility",
         zipfile.write(request.read())
         zipfile.close()
         zipfile = ZipFile(data_path+"/data.zip")
-        zipfile.extractall(path=data_path)
+        zipfile.extract(path=data_path)
         zipfile.close()
 
         
