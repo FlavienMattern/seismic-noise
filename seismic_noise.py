@@ -7,6 +7,8 @@ os.environ['PROJ_LIB'] = '/home/flavien/anaconda3/envs/SeismicNoise/share/proj'
 from mpl_toolkits.basemap import Basemap
 import numpy as np
 
+
+
 def load_google_mobility(data_path = "DATA/google_mobility",
                          data_url = "https://www.gstatic.com/covid19/mobility/Region_Mobility_Report_CSVs.zip",
                          download_data = False,
@@ -37,7 +39,6 @@ def load_google_mobility(data_path = "DATA/google_mobility",
         zipfile = ZipFile(data_path+"/data.zip")
         zipfile.extractall(path=data_path)
         zipfile.close()
-
         
     # Lecture des données
     for year in ["2020", "2021"]:
@@ -172,6 +173,7 @@ def load_apple_mobility(data_path = "DATA/apple_mobility",
     return data_all
         
 
+    
 def create_map(latmin=41, latmax=52,
                lonmin=-5, lonmax=11,
                resol="i",
