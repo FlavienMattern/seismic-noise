@@ -41,7 +41,7 @@ from seismic_noise import download_noise, process_PPSD, load_PPSD, process_DRMS
 time_zone = "Europe/Brussels"     # Format d'heure
 dl_noise = True                   # Téléchargement des données
 proc_PPSD = True                  # Calcul des PPSDs
-proc_DRMS = True                  # Calcul de déplacement RMS
+proc_DRMS = True                  # Calcul du déplacement RMS
 delete_MSEED = False              # Suppression des fichiers MSEED
 PPSD_FOLDER  = "/media/flavien/Stockage/SeismicNoiseData/test/PPSD"
 DRMS_FOLDER  = "/media/flavien/Stockage/SeismicNoiseData/test/DRMS"
