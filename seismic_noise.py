@@ -207,13 +207,28 @@ def load_apple_mobility(data_path = "DATA/apple_mobility",
 
 
 def download_noise(start, end, time_zone, station_str, client, folder_out, datelist):
-
+    """
+    ├─ DESCRIPTION ─┤
+    ├ Téléchargement des formes d'ondes.
+    
+    ├─ INPUT ─┤
+    ├  start       : (UTCDateTime) Date de début
+    ├  end         : (UTCDateTime) Date de fin
+    ├  time_zone   : (string) Zone UTC
+    ├  station_str : (string) Nom de la station
+    ├  client      : (Client) Client pour accéder aux webservices
+    ├  folder_out  : (string) Répertoire d'enregistrement des données
+    ├  datelist    : (list) Liste des jours à considérer (datetime)
+    
+    ├─ OUTPUT ─┤
+    ├ None
+    """
+    
     # Création du fichier où seront stockées les données
     if not os.path.exists(folder_out):
         os.makedirs(folder_out)
 
     station = station_str.split(".")
-    # print("[{}] [INFO] Collecting <{}>".format(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), station_str))
 
     for day in datelist:
         
@@ -235,15 +250,30 @@ def download_noise(start, end, time_zone, station_str, client, folder_out, datel
 
     
 def process_PPSD(start, end, time_zone, station_str, client, folder_in, folder_out, datelist):
-
+    """
+    ├─ DESCRIPTION ─┤
+    ├ Calcul des PPSDs à partir des formes d'ondes.
+    
+    ├─ INPUT ─┤
+    ├  start       : (UTCDateTime) Date de début
+    ├  end         : (UTCDateTime) Date de fin
+    ├  time_zone   : (string) Zone UTC
+    ├  station_str : (string) Nom de la station
+    ├  client      : (Client) Client pour accéder aux webservices
+    ├  folder_in   : (string) Répertoire de récupération des données
+    ├  folder_out  : (string) Répertoire d'enregistrement des données
+    ├  datelist    : (list) Liste des jours à considérer (datetime)
+    
+    ├─ OUTPUT ─┤
+    ├ None
+    """
+    
     force_reprocess = False
     station = station_str.split(".")
     
     # Création du fichier où seront stockées les données
     if not os.path.exists(folder_out):
         os.makedirs(folder_out)
-
-    # print("[{}] [INFO] Processing <{}>".format(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), station_str))
 
     for day in datelist:
         
@@ -292,6 +322,19 @@ def process_PPSD(start, end, time_zone, station_str, client, folder_in, folder_o
         
         
 def load_PPSD(list_stations, period, folder_in):
+    """
+    ├─ DESCRIPTION ─┤
+    ├ Lecture des PPSDs déjà stockées au format .npz.
+    
+    ├─ INPUT ─┤
+    ├  list_stations : (list) Liste des stations à étudier (string)
+    ├  period        : (list) Date de début et de fin (UTCDateTime)
+    ├  folder_in     : (string) Répertoire de récupération des données
+    
+    ├─ OUTPUT ─┤
+    ├ ppsds          : (dict) Dictionnaire contenant un objet PPSD pour chaque
+    │                  clé (1 clé = 1 station)
+    """
     
     ppsds = {}
 
@@ -326,6 +369,19 @@ def load_PPSD(list_stations, period, folder_in):
 
 
 def process_DRMS(ppsds, freqs, folder_out):
+    """
+    ├─ DESCRIPTION ─┤
+    ├ Calcul du déplacement RMS.
+    
+    ├─ INPUT ─┤
+    ├  ppsds     : (dict) Dictionnaire contenant un objet PPSD pour chaque
+    │              clé (1 clé = 1 station)
+    ├  freqs     : (list) Liste des bandes de fréquences à étulier. Chaque
+    │              élément contient un tuple au format (freq_min, freq_max)
+    ├  folder_in : (string) Répertoire de récupération des données
+    ├─ OUTPUT ─┤
+    ├ None
+    """
     
     # Création du fichier où seront stockées les données
     if not os.path.exists(folder_out):
