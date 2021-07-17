@@ -1,11 +1,43 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+
+
+#############################################
+# Importation des modules                   #
+#############################################
+
+import os
+import sys
+import json
+from glob import glob
+import pyproj
+import warnings
+
 import urllib.request
 from zipfile import ZipFile
-import os
+
 import pandas as pd
-import json
+import numpy as np
+import datetime
+from dateutil import tz
+
+from obspy import UTCDateTime, read
+from obspy.clients.fdsn import Client
+from obspy.clients.fdsn.client import FDSNNoDataException
+from obspy.signal import PPSD
+
 os.environ['PROJ_LIB'] = '/home/flavien/anaconda3/envs/SeismicNoise/share/proj'
 from mpl_toolkits.basemap import Basemap
-import numpy as np
+
+from seismosocialdistancing import *
+
+
+
+#############################################
+# Définition des fonctions                  #
+#############################################
+
 
 
 
@@ -171,8 +203,147 @@ def load_apple_mobility(data_path = "DATA/apple_mobility",
             data_all = pd.concat([data_all, sub_data])
     
     return data_all
+
+
+
+def download_noise(start, end, time_zone, station_str, client, folder_out, datelist):
+
+    # Création du fichier où seront stockées les données
+    if not os.path.exists(folder_out):
+        os.makedirs(folder_out)
+
+    station = station_str.split(".")
+    # print("[{}] [INFO] Collecting <{}>".format(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), station_str))
+
+    for day in datelist:
+        
+        date_str = day.strftime("%Y-%m-%d")
+        file = "{}{}_{}.mseed".format(folder_out, date_str, station_str)
+        
+        if day != UTCDateTime().datetime and os.path.isfile(file):
+            continue
+        else:
+            try: 
+                stream = client.get_waveforms(station[0], station[1], station[2], station[3],
+                                              UTCDateTime(day)-1801, UTCDateTime(day)+86400+1801,
+                                              attach_response=True)
+            except:
+                continue
+                
+            stream.write(file)
         
 
+    
+def process_PPSD(start, end, time_zone, station_str, client, folder_in, folder_out, datelist):
+
+    force_reprocess = False
+    station = station_str.split(".")
+    
+    # Création du fichier où seront stockées les données
+    if not os.path.exists(folder_out):
+        os.makedirs(folder_out)
+
+    # print("[{}] [INFO] Processing <{}>".format(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), station_str))
+
+    for day in datelist:
+        
+        date_str = day.strftime("%Y-%m-%d")
+        file_in = "{}{}_{}.mseed".format(folder_in, date_str, station_str)
+        
+        if not os.path.isfile(file_in):
+            continue
+
+        try:
+            resp = client.get_stations(UTCDateTime(day), network=station[0], station=station[1], location=station[2],
+                        channel=station[3], level="response")
+            stall = read(file_in, headonly=True)
+        except:
+            continue
+        
+        for mseedid in list(set([tr.id for tr in stall])):
+            file_out = "{}{}_{}.npz".format(folder_out, date_str, mseedid)
+            
+            if os.path.isfile(file_out) and not force_reprocess:
+                continue
+            
+            try:    
+                st = read(file_in, sourcename=mseedid)
+            except:
+                continue
+
+            st.attach_response(resp)
+            ppsd = PPSD(st[0].stats, metadata=resp,
+                        ppsd_length=1800, overlap=0.5,
+                        period_smoothing_width_octaves=0.025,
+                        period_step_octaves=0.0125,
+                        period_limits=(0.008, 50),
+                        db_bins=(-200, 20, 0.25))
+            
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                ppsd.add(st)
+                
+            ppsd.save_npz(file_out[:-4])
+            del st, ppsd
+            
+        del stall
+    
+        
+        
+        
+def load_PPSD(list_stations, period, folder_in):
+    
+    ppsds = {}
+
+    for j in range(len(list_stations)):
+
+        datelist = pd.date_range(period[0].datetime, min(period[1], UTCDateTime()).datetime, freq="D")
+        station_str = "{}.{}.{}.{}".format(list_stations[j].split(".")[0], list_stations[j].split(".")[1], list_stations[j].split(".")[2], list_stations[j].split(".")[3])
+        mseedid = "{}_{}_{}".format(station_str, datelist[0].strftime("%Y-%m-%d"),datelist[-1].strftime("%Y-%m-%d"))
+
+        for day in datelist:
+            date_str = day.strftime("%Y-%m-%d")
+            file_pattern = "{}{}_*.npz".format(folder_in, date_str)
+            for file in glob(file_pattern):
+                
+                if mseedid not in ppsds:
+                    try:
+                        ppsds[mseedid] = PPSD.load_npz(file, allow_pickle=True)
+                    except:
+                        continue
+                else:
+                    with warnings.catch_warnings():
+                        warnings.simplefilter("ignore")
+                        ppsds[mseedid].add_npz(file, allow_pickle=True)
+
+#         try:
+#             ppsds[mseedid].save_npz("{}{}.npz".format(folder_out, station_str))
+#         except KeyError:
+#             continue
+            
+    return ppsds
+
+
+
+def process_DRMS(ppsds, freqs, folder_out):
+    
+    # Création du fichier où seront stockées les données
+    if not os.path.exists(folder_out):
+        os.makedirs(folder_out)
+
+    displacement_RMS = {}
+    
+
+    for mseedid, ppsd in ppsds.items():
+        ind_times = pd.DatetimeIndex([d.datetime for d in ppsd.current_times_used])
+        data = pd.DataFrame(ppsd.psd_values, index=ind_times, columns=1./ppsd.period_bin_centers)
+        data = data.sort_index(axis=1)
+        displacement_RMS[mseedid] = df_rms(data, freqs, output="DISP")
+        displacement_RMS[mseedid].to_csv("{}/{}.csv".format(folder_out, mseedid.split("_")[0]))
+    
+    del displacement_RMS
+    
+    
     
 def create_map(latmin=41, latmax=52,
                lonmin=-5, lonmax=11,
