@@ -4,7 +4,7 @@
   <Sender>RESIF-DC</Sender>
   <Module>RESIF WEB SERVICE: fdsnws-station | version: 1.1.1 </Module>
   <ModuleURI>http://ws.resif.fr/fdsnws/station/1/query?starttime=2020-02-15T00%3A00%3A00.000000&amp;endtime=2021-06-30T00%3A00%3A00.000000&amp;network=FR%2CG%2CRD&amp;location=00%2C--%2C10&amp;channel=EHZ%2CHHZ&amp;minlatitude=41.0&amp;maxlatitude=52.0&amp;minlongitude=-5.0&amp;maxlongitude=10.0&amp;level=channel</ModuleURI>
-  <Created>2021-07-07T21:05:46.000000Z</Created>
+  <Created>2021-07-15T15:01:28.000000Z</Created>
   <Network code="FR" startDate="1962-01-01T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" alternateCode="RLBP">
     <Description>RESIF and other Broad-band and accelerometric permanent networks in metropolitan France</Description>
     <Identifier type="DOI">10.15778/RESIF.FR</Identifier>

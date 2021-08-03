@@ -4,7 +4,7 @@
   <Sender>RESIF-DC</Sender>
   <Module>RESIF WEB SERVICE: fdsnws-station | version: 1.1.1 </Module>
   <ModuleURI>http://ws.resif.fr/fdsnws/station/1/query?network=G&amp;station=CCD%2CDRV&amp;location=00&amp;channel=BHZ%2CEHZ%2CHHZ&amp;level=channel</ModuleURI>
-  <Created>2021-07-07T21:12:19.000000Z</Created>
+  <Created>2021-07-15T15:01:36.000000Z</Created>
   <Network code="G" startDate="1982-01-01T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" alternateCode="GEOSCOPE">
     <Description>French Global Network of Seismological Broadband Stations</Description>
     <Identifier type="DOI">10.18715/GEOSCOPE.G</Identifier>
