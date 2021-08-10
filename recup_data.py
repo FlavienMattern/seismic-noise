@@ -31,6 +31,8 @@ from obspy.clients.fdsn import Client
 from obspy.clients.fdsn.client import FDSNNoDataException
 from obspy.signal import PPSD
 from seismic_noise import download_noise, process_PPSD, load_PPSD, process_DRMS
+import urllib.request
+import zipfile
 
 
 
@@ -39,6 +41,7 @@ from seismic_noise import download_noise, process_PPSD, load_PPSD, process_DRMS
 #############################################
 
 time_zone = "Europe/Brussels"     # Format d'heure
+dl_PPSD = True                    # Téléchargement des PPSDs
 dl_noise = True                   # Téléchargement des données
 proc_PPSD = True                  # Calcul des PPSDs
 proc_DRMS = True                  # Calcul du déplacement RMS
@@ -112,6 +115,21 @@ for station_str in all_stations:
     if dl_noise:
         print("[{}] [INFO]     Collecting ...".format(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
         download_noise(start, end, time_zone, station_str, client, MSEED_FILES, datelist)
+        
+    ### Téléchargement des PPSDs
+    if dl_PPSD:
+        print("[{}] [INFO]     Collecting PPSDs ... ".format(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+        filename = PPSD_FOLDER + 'data.zip'
+        net, sta, loc, cha = tuple(station_str.split("."))
+        url = "https://ws.resif.fr/resifws/ppsd/1/query?net={}&sta={}&loc={}&cha={}&starttime={}&endtime={}&format=npz&nodata=404".format(net,sta,loc,cha,start_date,end_date)
+        try:
+            urllib.request.urlretrieve(url, filename)
+        except HTTPError:
+            pass
+        else:
+            with zipfile.ZipFile(filename, 'r') as zip_ref:
+                zip_ref.extractall(PPSD_FOLDER)
+            os.remove(filename)
     
     ### Calcul des PPSDs
     if proc_PPSD:
