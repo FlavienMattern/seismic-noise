@@ -10,6 +10,7 @@ L'utilisation des programmes / notebooks nécessite les modules suivants :
 - matplotlib
 - obspy
 - basemap
+- basemap-data-hires
 - tqdm
 
 Les programmes / notebooks ont été testés sur la version **3.8.5** de python.
