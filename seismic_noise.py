@@ -303,7 +303,7 @@ def process_PPSD(start, end, time_zone, station_str, client, folder_in, folder_o
 
             st.attach_response(resp)
             ppsd = PPSD(st[0].stats, metadata=resp,
-                        ppsd_length=1800, overlap=0.5,
+                        ppsd_length=1800, overlap=0.0,
                         period_smoothing_width_octaves=0.025,
                         period_step_octaves=0.0125,
                         period_limits=(0.008, 50),
@@ -346,7 +346,7 @@ def load_PPSD(list_stations, period, folder_in):
 
         for day in datelist:
             date_str = day.strftime("%Y-%m-%d")
-            file_pattern = "{}{}_*.npz".format(folder_in, date_str)
+            file_pattern = "{}/*.npz".format(folder_in, date_str)
             for file in glob(file_pattern):
                 
                 if mseedid not in ppsds:
@@ -392,7 +392,14 @@ def process_DRMS(ppsds, freqs, folder_out):
 
     for mseedid, ppsd in ppsds.items():
         ind_times = pd.DatetimeIndex([d.datetime for d in ppsd.current_times_used])
+        if ind_times[0].second == 59:
+            ind_times = ind_times + pd.Timedelta(1, unit='s')
+        ind_times = ind_times.map(lambda x: x.replace(microsecond=0))
         data = pd.DataFrame(ppsd.psd_values, index=ind_times, columns=1./ppsd.period_bin_centers)
+        ind_times_i = ind_times[10].replace(hour=0,minute=0,second=0)
+        ind_times_f = ind_times[-10].replace(hour=23,minute=59,second=59)
+        mask = (ind_times >= ind_times_i) & (ind_times < ind_times_f)
+        data = data.loc[mask]
         data = data.sort_index(axis=1)
         displacement_RMS[mseedid] = df_rms(data, freqs, output="DISP")
         displacement_RMS[mseedid].to_csv("{}/{}.csv".format(folder_out, mseedid.split("_")[0]))
