@@ -476,3 +476,106 @@ def create_map(latmin=41, latmax=52,
     m.drawmapscale(lon_pos, lat_pos, lon_pos, lat_pos, bar_width, barstyle='fancy', zorder=100, yoffset=1500*abs(latmax-latmin))
     
     return m
+
+
+
+def hourly_var(noise, periods):
+    warnings.filterwarnings("ignore")
+
+
+    ### On reshape l'array en prenant la médiane sur chaque demi-heure
+    # noise = noise.resample("30min").median()
+
+
+    ### On décale les données de 30min pour corriger l'effet de la médiane
+    # noise = noise.tshift(30, "min")
+
+
+    ### Conversion des heures en heures locales
+    L = len(noise.index.values)
+    utc_list = [ UTCDateTime(str(noise.index.values[i])) for i in range(L) ]
+    local_list = UTCToLocal(utc_list)
+    local_list = [ np.datetime64(local_list[i].strftime("%Y-%m-%dT%H:%M:%S.%fZ")) for i in range(L) ]
+    local_list = np.asarray(local_list, dtype='datetime64[ns]')
+
+    new_noise = noise.reindex(local_list, method=None)
+    for i in range(L):
+        new_noise.iloc(0)[i] = noise.iloc(0)[i]
+    noise = new_noise
+
+
+    ### Création du vecteur temporel
+    nDays = int( (periods[0][1]-periods[0][0]) / (3600*24) )  # Nombre de jours de la période étudiée
+    tStart = pd.Timestamp(periods[0][0].strftime('%Y-%m-%d'))
+    tEnd = pd.Timestamp(periods[0][1].strftime('%Y-%m-%d'))
+    t = np.linspace(tStart.value, tEnd.value, nDays+1)
+    t = pd.to_datetime(t)[:-1]
+    h = np.arange(0, 24, 0.5)
+
+
+    ### Création et remplissage de la matrice du bruit
+    noise_matrix = np.zeros((48, nDays))  # Matrice du bruit (1 colonne = 1 journée / 1 ligne = 1/2 heure)
+    for i, day in enumerate(t):
+        sublist = noise.loc[noise.index.values < day + np.timedelta64(1,'D')]
+        sublist = sublist.loc[sublist.index.values >= day]
+        
+        k = 48 - len(sublist)
+        if k > 0:
+            try:
+                sublist = [sublist[0]]*k + sublist.to_list()  # Ajout de la première valeur dans toute la période considérée
+            except:
+                # print(day, "\ŧ", k, "\ŧ", sublist)
+                sublist = np.zeros(48)
+        elif k < 0:
+            # sublist = sublist.drop_duplicates(keep='first')
+            sublist = np.zeros(48)
+
+            
+        noise_matrix[:,i] = np.asarray(sublist)
+        
+    return t, h, noise_matrix
+
+
+
+def UTCToLocal(utc_time=UTCDateTime()):
+    """
+    utc_time : liste d'objets UTCDateTime que l'on veut convertir en heure locale
+    """
+    
+    try:
+        N = len(utc_time)
+    except TypeError:
+        utc_time = [utc_time]
+        N = 1
+        
+    from_zone = tz.tzutc()  # Zone UTC
+    to_zone = tz.tzlocal()  # Zone locale
+    # to_zone = pytz.timezone('ZONE')  # Autre méthode cool pour passer en heure locale
+    local_time = []         # Liste des heures locales
+
+    for i in range(N):
+        # Conversion en datetime
+        utc = datetime.datetime(utc_time[i].year,
+                       utc_time[i].month,
+                       utc_time[i].day,
+                       utc_time[i].hour,
+                       utc_time[i].minute,
+                       utc_time[i].second,
+                       utc_time[i].microsecond)
+
+        # On précise que l'objet datetime est en UTC
+        utc = utc.replace(tzinfo=from_zone)
+
+        # Conversion du UTC vers un temps local au format str
+        local = utc.astimezone(to_zone).strftime("%Y-%m-%dT%H:%M:%S.%fZ")  
+
+        # Conversion en objet UTCDateTime
+        local = UTCDateTime(local)
+        
+        # Remplissage de la liste des heures locales
+        local_time.append(local)
+    
+    if N == 1:
+        return local_time[0]
+    else:
+        return local_time
