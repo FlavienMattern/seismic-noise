@@ -42,14 +42,14 @@ import zipfile
 
 time_zone = "Europe/Brussels"     # Format d'heure
 dl_PPSD = True                    # Téléchargement des PPSDs
-dl_noise = True                   # Téléchargement des données
-proc_PPSD = True                  # Calcul des PPSDs
+dl_noise = False                   # Téléchargement des données
+proc_PPSD = False                  # Calcul des PPSDs
 proc_DRMS = True                  # Calcul du déplacement RMS
 delete_MSEED = False              # Suppression des fichiers MSEED
-PPSD_FOLDER  = "/media/flavien/Stockage/SeismicNoiseData/test/PPSD"
-DRMS_FOLDER  = "/media/flavien/Stockage/SeismicNoiseData/test/DRMS"
-MSEED_FOLDER = "/media/flavien/Stockage/SeismicNoiseData/test/MSEED"
-freqs = [(4, 14)]                 # Bandes de fréquence à étudier
+PPSD_FOLDER  = "/media/flavien/Stockage/SeismicNoiseData/PPSD"
+DRMS_FOLDER  = "/media/flavien/Stockage/SeismicNoiseData/DRMS"
+MSEED_FOLDER = "/media/flavien/Stockage/SeismicNoiseData/MSEED"
+freqs = [(0.01, 0.03), (0.1, 0.25), (0.3, 1), (1, 3), (5, 15), (20, 50)]                 # Bandes de fréquence à étudier
 
 
 

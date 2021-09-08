@@ -346,7 +346,8 @@ def load_PPSD(list_stations, period, folder_in):
 
         for day in datelist:
             date_str = day.strftime("%Y-%m-%d")
-            file_pattern = "{}/*.npz".format(folder_in, date_str)
+            file_pattern = "{}*.npz".format(folder_in, date_str)
+
             for file in glob(file_pattern):
                 
                 if mseedid not in ppsds:
