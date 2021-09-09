@@ -26,9 +26,9 @@ from obspy.clients.fdsn import Client
 from obspy.clients.fdsn.client import FDSNNoDataException
 from obspy.signal import PPSD
 
-try
+try:
     os.environ['PROJ_LIB'] = '/home/flavien/anaconda3/envs/SeismicNoise/share/proj'
-except
+except:
     pass
 
 from mpl_toolkits.basemap import Basemap
