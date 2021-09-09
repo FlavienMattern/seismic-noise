@@ -13,4 +13,8 @@ L'utilisation des programmes / notebooks nécessite les modules suivants :
 - basemap-data-hires
 - tqdm
 
+###
+Ecrire FR pour les codes sur France métropolitaine et ANT pour les codes Antarctique au début des noms de fichier
+###
+
 Les programmes / notebooks ont été testés sur la version **3.8.5** de python.
