@@ -5,3 +5,6 @@ apple_mobility/
 google_mobility/
 RESULTS/
 stations_fr*.txt
+DATA/DRMS/
+DATA/PPSD/
+DATA/MSEED/
