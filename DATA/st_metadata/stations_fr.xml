@@ -3,16 +3,13 @@
   <Source>RESIF-SI</Source>
   <Sender>RESIF-DC</Sender>
   <Module>RESIF WEB SERVICE: fdsnws-station | version: 1.1.1 </Module>
-  <ModuleURI>http://ws.resif.fr/fdsnws/station/1/query?starttime=2020-02-15T00%3A00%3A00.000000&amp;endtime=2021-07-31T00%3A00%3A00.000000&amp;network=FR%2CG%2CRD&amp;station=ABJF%2CAGO%2CAJAC%2CARBF%2CARTF%2CATE%2CBALS%2CBANN%2CBARI%2CBEGF%2CBLAF%2CBOUC%2CBRGF%2CBSTF%2CCALF%2CCAMF%2CCARF%2CCFF%2CCHIF%2CCHLF%2CCHMF%2CCIEL%2CCLAF%2CCLEV%2CCLF%2CCLMF%2CCOLF%2CCRAS%2CCRNF%2CCURIE%2CDOU%2CDUNF%2CEILF%2CENAUX%2CESCA%2CFAHY%2CFILF%2CFNEB%2CFOURG%2CFRNF%2CGARF%2CGENF%2CGIZF%2CGRN%2CGUEF%2CHOHE%2CHRSF%2CILLF%2CIRAF%2CISO%2CLABF%2CLAJAS%2CLATF%2CLBL%2CLEMB%2CLEUC%2CLOCF%2CLOUF%2CLRVF%2CMANO%2CMELF%2CMLS%2CMLYF%2CMLZA%2CMON%2CMONQ%2CMORSI%2CMTNF%2CMVIF%2CNEEW%2CNEUF%2COG02%2COG35%2COGAG%2COGCB%2COGCC%2COGCN%2COGDF%2COGDI%2COGLC%2COGMO%2COGMY%2COGRV%2COGS1%2COGS2%2COGS3%2COGSA%2COGSI%2COGSM%2COGVG%2COLIV%2CORDF%2COSSF%2CPAND%2CPIAF%2CPLDF%2CPLEF%2CPLOF%2CPLYF%2CPYLO%2CRESF%2CREYF%2CRIVEL%2CRONF%2CRSL%2CRUFF%2CRUSF%2CSALF%2CSALSA%2CSAOF%2CSAUF%2CSDOF%2CSJAF%2CSLVF%2CSMPL%2CSOMF%2CSPIF%2CSTR%2CSURF%2CSZBH%2CTERF%2CTRBF%2CTRIGF%2CTSDF%2CTURF%2CURDF%2CVALC%2CVERF%2CVIEF%2CVOEL%2CWALT%2CWLS%2CXAFF%2CZELS%2CFDFM%2CSSB%2CETNF%2CSAVF&amp;channel=HHZ&amp;minlatitude=41.0&amp;maxlatitude=52.0&amp;minlongitude=-5.0&amp;maxlongitude=10.0&amp;level=channel</ModuleURI>
-  <Created>2021-08-18T22:56:22.000000Z</Created>
+  <ModuleURI>http://ws.resif.fr/fdsnws/station/1/query?starttime=2020-01-01T00%3A00%3A00.000000&amp;endtime=2021-07-31T00%3A00%3A00.000000&amp;network=FR%2CG%2CRD&amp;station=ABJF%2CAGO%2CAJAC%2CARBF%2CARTF%2CATE%2CBALS%2CBANN%2CBARI%2CBEGF%2CBESN%2CBETS%2CBIMF%2CBLAF%2CBOUC%2CBOUF%2CBRGF%2CBSCF%2CBSTF%2CCALF%2CCAMF%2CCARF%2CCFF%2CCHIF%2CCHLF%2CCHMF%2CCIEL%2CCLAF%2CCLEV%2CCLF%2CCLMF%2CCOLF%2CCRAS%2CCRNF%2CCURIE%2CDOU%2CDUNF%2CEILF%2CENAUX%2CESCA%2CFAHY%2CFILF%2CFNEB%2CFOURG%2CFRNF%2CGARF%2CGENF%2CGIZF%2CGNEF%2CGRN%2CGUEF%2CHELF%2CHOHE%2CHRSF%2CILLF%2CILLK%2CIRAF%2CISO%2CLABF%2CLAJAS%2CLATF%2CLBL%2CLEMB%2CLEUC%2CLOCF%2CLOUF%2CLRVF%2CMANO%2CMELF%2CMLS%2CMLYF%2CMLZA%2CMON%2CMONQ%2CMORSI%2CMTNF%2CMVIF%2CNEEW%2CNEUF%2COG02%2COG35%2COGAG%2COGCB%2COGCC%2COGCN%2COGDF%2COGDI%2COGGL%2COGJA%2COGLC%2COGMO%2COGMY%2COGRV%2COGS1%2COGS2%2COGS3%2COGSA%2COGSI%2COGSM%2COGVG%2COLIV%2COPS%2CORDF%2COSSF%2CPAND%2CPIAF%2CPLDF%2CPLEF%2CPLOF%2CPLYF%2CPYLO%2CRESF%2CREYF%2CRIVEL%2CRONF%2CRSL%2CRUFF%2CRUSF%2CSALF%2CSALSA%2CSAOF%2CSAUF%2CSDOF%2CSJAF%2CSLVF%2CSMPL%2CSOMF%2CSPIF%2CSROF%2CSTR%2CSURF%2CSZBH%2CTERF%2CTRBF%2CTRIGF%2CTSDF%2CTURF%2CURDF%2CVALC%2CVERF%2CVIEF%2CVILS%2CVOEL%2CWALT%2CWLS%2CXAFF%2CZELS%2CFDFM%2CSANVU%2CSSB%2CETNF%2CSAVF&amp;channel=HHZ&amp;minlatitude=41.0&amp;maxlatitude=52.0&amp;minlongitude=-5.0&amp;maxlongitude=10.0&amp;level=channel</ModuleURI>
+  <Created>2021-09-10T09:04:26.000000Z</Created>
   <Network code="FR" startDate="1962-01-01T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" alternateCode="RLBP">
     <Description>RESIF and other Broad-band and accelerometric permanent networks in metropolitan France</Description>
     <Identifier type="DOI">10.15778/RESIF.FR</Identifier>
-    <Comment>
-      <Value>DOI:http://dx.doi.org/10.15778/RESIF.FR</Value>
-    </Comment>
-    <TotalNumberStations>173</TotalNumberStations>
-    <SelectedNumberStations>134</SelectedNumberStations>
+    <TotalNumberStations>174</TotalNumberStations>
+    <SelectedNumberStations>147</SelectedNumberStations>
     <Station code="ABJF" startDate="2016-06-30T12:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
       <Latitude unit="DEGREES">45.573975</Latitude>
       <Longitude unit="DEGREES">0.760999</Longitude>
@@ -25,7 +22,6 @@
         <Region>Nouvelle-Aquitaine</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -92,7 +88,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de Physique du Globe de Clermont-Ferrand (OPGC)</Agency>
         <Contact>
@@ -159,7 +154,6 @@
         <Region>Corse</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -262,7 +256,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -356,7 +349,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -423,7 +415,6 @@
         <Region>Nouvelle-Aquitaine</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -490,7 +481,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de Recherche Méditerranéen de l'Environnement (OREME)</Agency>
         <WebSite>https://data.oreme.org/observation/rlbp</WebSite>
@@ -554,7 +544,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -621,7 +610,6 @@
         <Region>Hauts-de-France</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Institut de Physique du Globe de Paris (IPGP)</Agency>
         <WebSite>https://www.ipgp.fr</WebSite>
@@ -694,7 +682,6 @@
         <Region>Bretagne</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
         <Contact>
@@ -758,6 +745,199 @@
         </Response>
       </Channel>
     </Station>
+    <Station code="BESN" startDate="2019-10-11T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
+      <Latitude unit="DEGREES">49.374499</Latitude>
+      <Longitude unit="DEGREES">-1.614326</Longitude>
+      <Elevation>70.0</Elevation>
+      <Site>
+        <Name>Besneville</Name>
+        <Description>administrative code : 50049</Description>
+        <Town>Besneville</Town>
+        <County>Manche</County>
+        <Region>Normandie</Region>
+        <Country>France</Country>
+      </Site>
+      <Operator>
+        <Agency>Institut de Physique du Globe de Paris (IPGP)</Agency>
+        <WebSite>https://www.ipgp.fr</WebSite>
+      </Operator>
+      <CreationDate>2019-10-11T00:00:00.000000Z</CreationDate>
+      <TotalNumberChannels>6</TotalNumberChannels>
+      <SelectedNumberChannels>1</SelectedNumberChannels>
+      <Channel code="HHZ" startDate="2020-09-05T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>STATUS: RLBP national</Value>
+          <BeginEffectiveTime>2020-09-05T00:00:00.000000Z</BeginEffectiveTime>
+          <Author>
+            <Name>Observatoire de la Côte d'Azur</Name>
+            <Email>network.oca@resif.fr</Email>
+          </Author>
+        </Comment>
+        <Latitude unit="DEGREES">49.374499</Latitude>
+        <Longitude unit="DEGREES">-1.614326</Longitude>
+        <Elevation>70.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Sensor>
+          <Description>TRILLIUM-120QA broad band triaxial sensor by Nanometrics</Description>
+          <Model>TRILLIUM-120QA</Model>
+          <SerialNumber>002701</SerialNumber>
+        </Sensor>
+        <DataLogger>
+          <Description>CENTAUR data acquisition system by Nanometrics</Description>
+          <Model>CENTAUR</Model>
+          <SerialNumber>2909</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>481000000.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>meter per second (velocity)</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>digital counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="BETS" startDate="2012-01-18T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
+      <Latitude unit="DEGREES">48.89357</Latitude>
+      <Longitude unit="DEGREES">7.92429</Longitude>
+      <Elevation>146.0</Elevation>
+      <Site>
+        <Name>Betschdorf</Name>
+        <Description>administrative code : 67339</Description>
+        <Town>Betschdorf</Town>
+        <County>Bas-Rhin</County>
+        <Region>Grand Est</Region>
+        <Country>France</Country>
+      </Site>
+      <Operator>
+        <Agency>ES Géothermie (ESG)</Agency>
+        <WebSite>https://geothermie.es.fr</WebSite>
+      </Operator>
+      <CreationDate>2012-01-18T00:00:00.000000Z</CreationDate>
+      <TotalNumberChannels>9</TotalNumberChannels>
+      <SelectedNumberChannels>1</SelectedNumberChannels>
+      <Channel code="HHZ" startDate="2017-11-27T12:00:00.000000Z" endDate="2021-01-22T09:30:00.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>STATUS: RLBP national</Value>
+          <BeginEffectiveTime>2017-11-27T12:00:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2021-01-22T09:30:00.000000Z</EndEffectiveTime>
+          <Author>
+            <Name>Observatoire de la Côte d'Azur</Name>
+            <Email>network.oca@resif.fr</Email>
+          </Author>
+        </Comment>
+        <Latitude unit="DEGREES">48.89357</Latitude>
+        <Longitude unit="DEGREES">7.92429</Longitude>
+        <Elevation>146.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">200.0</SampleRate>
+        <Sensor>
+          <Description>TRILLIUM-Compact broad band triaxial sensor by Nanometrics</Description>
+          <Model>TRILLIUM-Compact</Model>
+          <SerialNumber>004992</SerialNumber>
+        </Sensor>
+        <DataLogger>
+          <Description>CENTAUR data acquisition system by Nanometrics</Description>
+          <Model>CENTAUR</Model>
+          <SerialNumber>2980</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>300833456.48</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>meter per second (velocity)</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>digital counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="BIMF" startDate="2016-03-30T13:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
+      <Latitude unit="DEGREES">47.326646</Latitude>
+      <Longitude unit="DEGREES">-3.201572</Longitude>
+      <Elevation>54.0</Elevation>
+      <Site>
+        <Name>Belle-Île-en-Mer</Name>
+        <Description>administrative code : 56009</Description>
+        <Town>Bangor</Town>
+        <County>Morbihan</County>
+        <Region>Bretagne</Region>
+        <Country>France</Country>
+      </Site>
+      <Operator>
+        <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
+        <Contact>
+          <Email>network.osuna@resif.fr</Email>
+        </Contact>
+        <WebSite>https://osuna.univ-nantes.fr/services-d-observation/rlbp/</WebSite>
+      </Operator>
+      <CreationDate>2016-03-30T13:00:00.000000Z</CreationDate>
+      <TotalNumberChannels>6</TotalNumberChannels>
+      <SelectedNumberChannels>1</SelectedNumberChannels>
+      <Channel code="HHZ" startDate="2019-05-22T14:02:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>STATUS: RLBP national</Value>
+          <BeginEffectiveTime>2019-05-22T14:02:00.000000Z</BeginEffectiveTime>
+          <Author>
+            <Name>Observatoire de la Côte d'Azur</Name>
+            <Email>network.oca@resif.fr</Email>
+          </Author>
+        </Comment>
+        <Latitude unit="DEGREES">47.326646</Latitude>
+        <Longitude unit="DEGREES">-3.201572</Longitude>
+        <Elevation>54.0</Elevation>
+        <Depth>11.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Sensor>
+          <Description>TRILLIUM-120PH broad band triaxial sensor by Nanometrics</Description>
+          <Model>TRILLIUM-120PH</Model>
+          <SerialNumber>000778</SerialNumber>
+        </Sensor>
+        <DataLogger>
+          <Description>CENTAUR data acquisition system by Nanometrics</Description>
+          <Model>CENTAUR</Model>
+          <SerialNumber>2927</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>481000000.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>meter per second (velocity)</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>digital counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
     <Station code="BLAF" startDate="2011-11-16T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
       <Comment>
         <Value>Power supply failure</Value>
@@ -788,7 +968,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -855,7 +1034,6 @@
         <Region>Bourgogne-Franche-Comté</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -928,6 +1106,116 @@
         </Response>
       </Channel>
     </Station>
+    <Station code="BOUF" startDate="2011-09-29T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
+      <Latitude unit="DEGREES">47.160519</Latitude>
+      <Longitude unit="DEGREES">-1.638081</Longitude>
+      <Elevation>23.0</Elevation>
+      <Site>
+        <Name>Bouguenais</Name>
+        <Description>administrative code : 44020</Description>
+        <Town>Bouguenais</Town>
+        <County>Loire-Atlantique</County>
+        <Region>Pays de la Loire</Region>
+        <Country>France</Country>
+      </Site>
+      <Operator>
+        <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
+        <Contact>
+          <Email>network.osuna@resif.fr</Email>
+        </Contact>
+        <WebSite>https://osuna.univ-nantes.fr/services-d-observation/rlbp/</WebSite>
+      </Operator>
+      <CreationDate>2011-09-29T00:00:00.000000Z</CreationDate>
+      <TotalNumberChannels>18</TotalNumberChannels>
+      <SelectedNumberChannels>2</SelectedNumberChannels>
+      <Channel code="HHZ" startDate="2017-08-25T10:19:00.000000Z" endDate="2020-07-16T06:26:00.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>STATUS: RLBP national</Value>
+          <BeginEffectiveTime>2017-08-25T10:19:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2020-07-16T06:26:00.000000Z</EndEffectiveTime>
+          <Author>
+            <Name>Observatoire de la Côte d'Azur</Name>
+            <Email>network.oca@resif.fr</Email>
+          </Author>
+        </Comment>
+        <Latitude unit="DEGREES">47.160519</Latitude>
+        <Longitude unit="DEGREES">-1.638081</Longitude>
+        <Elevation>23.0</Elevation>
+        <Depth>10.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Sensor>
+          <Description>TRILLIUM-120PH broad band triaxial sensor by Nanometrics</Description>
+          <Model>TRILLIUM-120PH</Model>
+          <SerialNumber>000661</SerialNumber>
+        </Sensor>
+        <DataLogger>
+          <Description>Q330 data acquisition system by Kinemetrics</Description>
+          <Model>Q330</Model>
+          <SerialNumber>4742</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>504365056.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>meter per second (velocity)</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>digital counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+      <Channel code="HHZ" startDate="2020-07-16T09:59:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>STATUS: RLBP national</Value>
+          <BeginEffectiveTime>2020-07-16T09:59:00.000000Z</BeginEffectiveTime>
+          <Author>
+            <Name>Observatoire de la Côte d'Azur</Name>
+            <Email>network.oca@resif.fr</Email>
+          </Author>
+        </Comment>
+        <Latitude unit="DEGREES">47.160519</Latitude>
+        <Longitude unit="DEGREES">-1.638081</Longitude>
+        <Elevation>23.0</Elevation>
+        <Depth>10.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Sensor>
+          <Description>TRILLIUM-120PH broad band triaxial sensor by Nanometrics</Description>
+          <Model>TRILLIUM-120PH</Model>
+          <SerialNumber>000661</SerialNumber>
+        </Sensor>
+        <DataLogger>
+          <Description>CENTAUR data acquisition system by Nanometrics</Description>
+          <Model>CENTAUR</Model>
+          <SerialNumber>2834</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>481000000.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>meter per second (velocity)</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>digital counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
     <Station code="BRGF" startDate="2015-07-16T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
       <Latitude unit="DEGREES">45.9568</Latitude>
       <Longitude unit="DEGREES">1.7711</Longitude>
@@ -940,7 +1228,6 @@
         <Region>Nouvelle-Aquitaine</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de Physique du Globe de Clermont-Ferrand (OPGC)</Agency>
         <Contact>
@@ -995,6 +1282,72 @@
         </Response>
       </Channel>
     </Station>
+    <Station code="BSCF" startDate="2017-08-24T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
+      <Latitude unit="DEGREES">46.804442</Latitude>
+      <Longitude unit="DEGREES">0.982288</Longitude>
+      <Elevation>127.0</Elevation>
+      <Site>
+        <Name>Bossay-sur-Claise</Name>
+        <Description>administrative code : 37028</Description>
+        <Town>Bossay-sur-Claise</Town>
+        <County>Indre-et-Loire</County>
+        <Region>Centre-Val de Loire</Region>
+        <Country>France</Country>
+      </Site>
+      <Operator>
+        <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
+        <Contact>
+          <Email>network.osuna@resif.fr</Email>
+        </Contact>
+        <WebSite>https://osuna.univ-nantes.fr/services-d-observation/rlbp/</WebSite>
+      </Operator>
+      <CreationDate>2017-08-24T00:00:00.000000Z</CreationDate>
+      <TotalNumberChannels>6</TotalNumberChannels>
+      <SelectedNumberChannels>1</SelectedNumberChannels>
+      <Channel code="HHZ" startDate="2019-10-22T13:13:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>STATUS: RLBP national</Value>
+          <BeginEffectiveTime>2019-10-22T13:13:00.000000Z</BeginEffectiveTime>
+          <Author>
+            <Name>Observatoire de la Côte d'Azur</Name>
+            <Email>network.oca@resif.fr</Email>
+          </Author>
+        </Comment>
+        <Latitude unit="DEGREES">46.804442</Latitude>
+        <Longitude unit="DEGREES">0.982288</Longitude>
+        <Elevation>127.0</Elevation>
+        <Depth>11.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Sensor>
+          <Description>TRILLIUM-120PH broad band triaxial sensor by Nanometrics</Description>
+          <Model>TRILLIUM-120PH</Model>
+          <SerialNumber>000852</SerialNumber>
+        </Sensor>
+        <DataLogger>
+          <Description>CENTAUR data acquisition system by Nanometrics</Description>
+          <Model>CENTAUR</Model>
+          <SerialNumber>5200</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>481000000.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>meter per second (velocity)</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>digital counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
     <Station code="BSTF" startDate="2010-07-08T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
       <Comment>
         <Value>Sensor turned off and removed work time at the station</Value>
@@ -1025,7 +1378,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -1190,7 +1542,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -1273,7 +1624,6 @@
         <Region>Bretagne</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
         <Contact>
@@ -1358,7 +1708,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -1425,7 +1774,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de Physique du Globe de Clermont-Ferrand (OPGC)</Agency>
         <Contact>
@@ -1492,7 +1840,6 @@
         <Region>Nouvelle-Aquitaine</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
         <Contact>
@@ -1502,7 +1849,51 @@
       </Operator>
       <CreationDate>2000-10-19T00:00:00.000000Z</CreationDate>
       <TotalNumberChannels>45</TotalNumberChannels>
-      <SelectedNumberChannels>1</SelectedNumberChannels>
+      <SelectedNumberChannels>2</SelectedNumberChannels>
+      <Channel code="HHZ" startDate="2019-08-28T09:45:00.000000Z" endDate="2020-02-11T11:42:10.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>STATUS: RLBP national</Value>
+          <BeginEffectiveTime>2019-08-28T09:45:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2020-02-11T11:42:10.000000Z</EndEffectiveTime>
+          <Author>
+            <Name>Observatoire de la Côte d'Azur</Name>
+            <Email>network.oca@resif.fr</Email>
+          </Author>
+        </Comment>
+        <Latitude unit="DEGREES">46.13346</Latitude>
+        <Longitude unit="DEGREES">-0.40767</Longitude>
+        <Elevation>62.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Sensor>
+          <Description>STS-2 broad band triaxial sensor by Streckeisen</Description>
+          <Model>STS-2</Model>
+          <SerialNumber>109611</SerialNumber>
+        </Sensor>
+        <DataLogger>
+          <Description>CENTAUR data acquisition system by Nanometrics</Description>
+          <Model>CENTAUR</Model>
+          <SerialNumber>5196</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>600000000.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>meter per second (velocity)</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>digital counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
       <Channel code="HHZ" startDate="2020-02-11T11:42:11.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
         <Comment>
           <Value>STATUS: RLBP national</Value>
@@ -1559,7 +1950,6 @@
         <Region>Bourgogne-Franche-Comté</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de Physique du Globe de Clermont-Ferrand (OPGC)</Agency>
         <Contact>
@@ -1626,7 +2016,6 @@
         <Region>Bourgogne-Franche-Comté</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -1702,7 +2091,6 @@
         <Region>Grand Est</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -1769,7 +2157,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -1836,7 +2223,6 @@
         <Region>Centre-Val de Loire</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Institut de Physique du Globe de Paris (IPGP)</Agency>
         <WebSite>https://www.ipgp.fr</WebSite>
@@ -1917,7 +2303,6 @@
         <Region>Centre-Val de Loire</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Institut de Physique du Globe de Paris (IPGP)</Agency>
         <WebSite>https://www.ipgp.fr</WebSite>
@@ -1981,7 +2366,6 @@
         <Region>Nouvelle-Aquitaine</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
         <Contact>
@@ -2048,7 +2432,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de Physique du Globe de Clermont-Ferrand (OPGC)</Agency>
         <Contact>
@@ -2115,7 +2498,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -2182,7 +2564,6 @@
         <Region>Pays de la Loire</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
         <Contact>
@@ -2249,7 +2630,6 @@
         <Region>Île-de-France</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Institut de Physique du Globe de Paris (IPGP)</Agency>
         <WebSite>https://www.ipgp.fr</WebSite>
@@ -2313,7 +2693,6 @@
         <Region>Wallonie</Region>
         <Country>Belgique</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -2380,7 +2759,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -2447,7 +2825,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -2456,7 +2833,7 @@
         <WebSite>https://www.oca.eu</WebSite>
       </Operator>
       <CreationDate>2011-04-08T00:00:00.000000Z</CreationDate>
-      <TotalNumberChannels>45</TotalNumberChannels>
+      <TotalNumberChannels>54</TotalNumberChannels>
       <SelectedNumberChannels>2</SelectedNumberChannels>
       <Channel code="HHZ" startDate="2014-09-05T09:41:00.000000Z" endDate="2021-03-30T09:30:00.000000Z" restrictedStatus="open" locationCode="00">
         <Comment>
@@ -2502,10 +2879,11 @@
           </InstrumentSensitivity>
         </Response>
       </Channel>
-      <Channel code="HHZ" startDate="2021-03-30T09:35:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
+      <Channel code="HHZ" startDate="2021-03-30T09:35:00.000000Z" endDate="2021-08-25T07:48:00.000000Z" restrictedStatus="open" locationCode="00">
         <Comment>
           <Value>STATUS: RLBP national</Value>
           <BeginEffectiveTime>2021-03-30T09:35:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2021-08-25T07:48:00.000000Z</EndEffectiveTime>
           <Author>
             <Name>Observatoire de la Côte d'Azur</Name>
             <Email>network.oca@resif.fr</Email>
@@ -2567,7 +2945,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -2643,7 +3020,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -2728,7 +3104,6 @@
         <Region>Bourgogne-Franche-Comté</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -2795,7 +3170,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -2870,7 +3244,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -2981,7 +3354,6 @@
         <Region>Bourgogne-Franche-Comté</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -3048,7 +3420,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de Physique du Globe de Clermont-Ferrand (OPGC)</Agency>
         <Contact>
@@ -3115,7 +3486,6 @@
         <Region>Centre-Val de Loire</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de Physique du Globe de Clermont-Ferrand (OPGC)</Agency>
         <Contact>
@@ -3199,7 +3569,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -3266,7 +3635,6 @@
         <Region>Centre-Val de Loire</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
         <Contact>
@@ -3321,10 +3689,84 @@
         </Response>
       </Channel>
     </Station>
+    <Station code="GNEF" startDate="2017-07-25T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
+      <Latitude unit="DEGREES">46.104732</Latitude>
+      <Longitude unit="DEGREES">0.328908</Longitude>
+      <Elevation>130.0</Elevation>
+      <Site>
+        <Name>Genouillé</Name>
+        <Description>administrative code : 86104</Description>
+        <Town>Genouillé</Town>
+        <County>Vienne</County>
+        <Region>Nouvelle-Aquitaine</Region>
+        <Country>France</Country>
+      </Site>
+      <Operator>
+        <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
+        <Contact>
+          <Email>network.osuna@resif.fr</Email>
+        </Contact>
+        <WebSite>https://osuna.univ-nantes.fr/services-d-observation/rlbp/</WebSite>
+      </Operator>
+      <CreationDate>2017-07-25T00:00:00.000000Z</CreationDate>
+      <TotalNumberChannels>6</TotalNumberChannels>
+      <SelectedNumberChannels>1</SelectedNumberChannels>
+      <Channel code="HHZ" startDate="2019-10-30T11:45:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>STATUS: RLBP national</Value>
+          <BeginEffectiveTime>2019-10-30T11:45:00.000000Z</BeginEffectiveTime>
+          <Author>
+            <Name>Observatoire de la Côte d'Azur</Name>
+            <Email>network.oca@resif.fr</Email>
+          </Author>
+        </Comment>
+        <Latitude unit="DEGREES">46.104732</Latitude>
+        <Longitude unit="DEGREES">0.328908</Longitude>
+        <Elevation>130.0</Elevation>
+        <Depth>20.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Sensor>
+          <Description>TRILLIUM-120PH broad band triaxial sensor by Nanometrics</Description>
+          <Model>TRILLIUM-120PH</Model>
+          <SerialNumber>000858</SerialNumber>
+        </Sensor>
+        <DataLogger>
+          <Description>CENTAUR data acquisition system by Nanometrics</Description>
+          <Model>CENTAUR</Model>
+          <SerialNumber>5205</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>481000000.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>meter per second (velocity)</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>digital counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
     <Station code="GRN" startDate="1989-10-29T18:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
+      <Comment>
+        <Value>Test of the Tank v4.0 with location code 10.</Value>
+        <BeginEffectiveTime>2021-08-18T09:24:00.000000Z</BeginEffectiveTime>
+        <Author>
+          <Name>Observatoire de la Côte d'Azur</Name>
+          <Email>network.oca@resif.fr</Email>
+        </Author>
+      </Comment>
       <Latitude unit="DEGREES">45.2413</Latitude>
       <Longitude unit="DEGREES">5.7439</Longitude>
-      <Elevation>1100.0</Elevation>
+      <Elevation>1040.0</Elevation>
       <Site>
         <Name>38185, Corenc</Name>
         <Description>administrative code : 38185</Description>
@@ -3333,7 +3775,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -3342,7 +3783,7 @@
         <WebSite>https://www.osug.fr/missions/observation</WebSite>
       </Operator>
       <CreationDate>1989-10-29T18:00:00.000000Z</CreationDate>
-      <TotalNumberChannels>21</TotalNumberChannels>
+      <TotalNumberChannels>24</TotalNumberChannels>
       <SelectedNumberChannels>1</SelectedNumberChannels>
       <Channel code="HHZ" startDate="2019-08-09T11:30:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
         <Comment>
@@ -3400,7 +3841,6 @@
         <Region>Bretagne</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
         <Contact>
@@ -3455,6 +3895,69 @@
         </Response>
       </Channel>
     </Station>
+    <Station code="HELF" startDate="2013-10-02T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
+      <Latitude unit="DEGREES">50.70492</Latitude>
+      <Longitude unit="DEGREES">2.24139</Longitude>
+      <Elevation>100.0</Elevation>
+      <Site>
+        <Name>Helfaut</Name>
+        <Description>administrative code : 62423</Description>
+        <Town>Helfaut</Town>
+        <County>Pas-de-Calais</County>
+        <Region>Hauts-de-France</Region>
+        <Country>France</Country>
+      </Site>
+      <Operator>
+        <Agency>Institut de Physique du Globe de Paris (IPGP)</Agency>
+        <WebSite>https://www.ipgp.fr</WebSite>
+      </Operator>
+      <CreationDate>2013-10-02T00:00:00.000000Z</CreationDate>
+      <TotalNumberChannels>6</TotalNumberChannels>
+      <SelectedNumberChannels>1</SelectedNumberChannels>
+      <Channel code="HHZ" startDate="2020-09-05T12:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>STATUS: RLBP national</Value>
+          <BeginEffectiveTime>2020-09-05T12:00:00.000000Z</BeginEffectiveTime>
+          <Author>
+            <Name>Observatoire de la Côte d'Azur</Name>
+            <Email>network.oca@resif.fr</Email>
+          </Author>
+        </Comment>
+        <Latitude unit="DEGREES">50.70492</Latitude>
+        <Longitude unit="DEGREES">2.24139</Longitude>
+        <Elevation>100.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Sensor>
+          <Description>TRILLIUM-120QA broad band triaxial sensor by Nanometrics</Description>
+          <Model>TRILLIUM-120QA</Model>
+          <SerialNumber>002755</SerialNumber>
+        </Sensor>
+        <DataLogger>
+          <Description>CENTAUR data acquisition system by Nanometrics</Description>
+          <Model>CENTAUR</Model>
+          <SerialNumber>2783</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>481000000.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>meter per second (velocity)</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>digital counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
     <Station code="HOHE" startDate="2015-09-29T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
       <Latitude unit="DEGREES">48.658742</Latitude>
       <Longitude unit="DEGREES">7.484304</Longitude>
@@ -3467,7 +3970,6 @@
         <Region>Grand Est</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -3534,7 +4036,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de Physique du Globe de Clermont-Ferrand (OPGC)</Agency>
         <Contact>
@@ -3601,7 +4102,6 @@
         <Region>Grand Est</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -3656,6 +4156,70 @@
         </Response>
       </Channel>
     </Station>
+    <Station code="ILLK" startDate="2016-02-18T10:30:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
+      <Latitude unit="DEGREES">48.515992</Latitude>
+      <Longitude unit="DEGREES">7.716819</Longitude>
+      <Elevation>144.0</Elevation>
+      <Site>
+        <Name>Illkirch-Graffenstaden</Name>
+        <Description>administrative code : 67218</Description>
+        <Town>Illkirch-Graffenstaden</Town>
+        <County>Bas-Rhin</County>
+        <Region>Grand Est</Region>
+        <Country>France</Country>
+      </Site>
+      <Operator>
+        <Agency>ES Géothermie (ESG)</Agency>
+        <WebSite>https://geothermie.es.fr</WebSite>
+      </Operator>
+      <CreationDate>2016-02-18T10:30:00.000000Z</CreationDate>
+      <TotalNumberChannels>6</TotalNumberChannels>
+      <SelectedNumberChannels>1</SelectedNumberChannels>
+      <Channel code="HHZ" startDate="2016-02-18T10:30:00.000000Z" endDate="2021-02-11T08:54:00.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>STATUS: RLBP national</Value>
+          <BeginEffectiveTime>2016-02-18T10:30:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2021-02-11T08:54:00.000000Z</EndEffectiveTime>
+          <Author>
+            <Name>Observatoire de la Côte d'Azur</Name>
+            <Email>network.oca@resif.fr</Email>
+          </Author>
+        </Comment>
+        <Latitude unit="DEGREES">48.515992</Latitude>
+        <Longitude unit="DEGREES">7.716819</Longitude>
+        <Elevation>144.0</Elevation>
+        <Depth>5.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">200.0</SampleRate>
+        <Sensor>
+          <Description>TRILLIUM-120PH broad band triaxial sensor by Nanometrics</Description>
+          <Model>TRILLIUM-120PH</Model>
+          <SerialNumber>000474</SerialNumber>
+        </Sensor>
+        <DataLogger>
+          <Description>Q330SP data acquisition system by Kinemetrics</Description>
+          <Model>Q330SP</Model>
+          <SerialNumber>5759</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>504364575.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>meter per second (velocity)</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>digital counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
     <Station code="IRAF" startDate="2015-09-18T12:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
       <Comment>
         <Value>Broadband station IRAF succeeds short period station LARF</Value>
@@ -3676,7 +4240,6 @@
         <Region>Nouvelle-Aquitaine</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -3751,7 +4314,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -3836,7 +4398,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -3947,7 +4508,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de Recherche Méditerranéen de l'Environnement (OREME)</Agency>
         <WebSite>https://data.oreme.org/observation/rlbp</WebSite>
@@ -4011,7 +4571,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -4078,7 +4637,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de Physique du Globe de Clermont-Ferrand (OPGC)</Agency>
         <Contact>
@@ -4145,7 +4703,6 @@
         <Region>Grand Est</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -4212,7 +4769,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -4288,7 +4844,6 @@
         <Region>Bretagne</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
         <Contact>
@@ -4355,7 +4910,6 @@
         <Region>Normandie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
         <Contact>
@@ -4422,7 +4976,6 @@
         <Region>Nouvelle-Aquitaine</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -4621,7 +5174,6 @@
         <Region>Grand Est</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -4688,7 +5240,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -4755,7 +5306,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -4831,7 +5381,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -4942,7 +5491,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -5016,7 +5564,6 @@
         <Town>Monaco</Town>
         <Country>Principauté de Monaco</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -5083,7 +5630,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -5194,7 +5740,6 @@
         <Region>Corse</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -5261,7 +5806,6 @@
         <Region>Pays de la Loire</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
         <Contact>
@@ -5337,7 +5881,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -5404,7 +5947,6 @@
         <Region>Grand Est</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -5471,7 +6013,6 @@
         <Region>Grand Est</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -5538,7 +6079,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -5605,7 +6145,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -5672,7 +6211,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -5739,7 +6277,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -5806,7 +6343,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -5873,7 +6409,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -5940,7 +6475,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -6007,7 +6541,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -6062,6 +6595,138 @@
         </Response>
       </Channel>
     </Station>
+    <Station code="OGGL" startDate="2018-09-20T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
+      <Latitude unit="DEGREES">45.878365</Latitude>
+      <Longitude unit="DEGREES">4.611435</Longitude>
+      <Elevation>405.0</Elevation>
+      <Site>
+        <Name>les carrières de Glay</Name>
+        <Description>administrative code : 69208</Description>
+        <Town>Saint-Germain-Nuelles</Town>
+        <County>Rhône</County>
+        <Region>Auvergne-Rhône-Alpes</Region>
+        <Country>France</Country>
+      </Site>
+      <Operator>
+        <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
+        <Contact>
+          <Email>network.osug@resif.fr</Email>
+        </Contact>
+        <WebSite>https://www.osug.fr/missions/observation</WebSite>
+      </Operator>
+      <CreationDate>2018-09-20T00:00:00.000000Z</CreationDate>
+      <TotalNumberChannels>3</TotalNumberChannels>
+      <SelectedNumberChannels>1</SelectedNumberChannels>
+      <Channel code="HHZ" startDate="2020-09-09T14:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>STATUS: RLBP national</Value>
+          <BeginEffectiveTime>2020-09-09T14:00:00.000000Z</BeginEffectiveTime>
+          <Author>
+            <Name>Observatoire de la Côte d'Azur</Name>
+            <Email>network.oca@resif.fr</Email>
+          </Author>
+        </Comment>
+        <Latitude unit="DEGREES">45.878365</Latitude>
+        <Longitude unit="DEGREES">4.611435</Longitude>
+        <Elevation>405.0</Elevation>
+        <Depth>5.5</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Sensor>
+          <Description>TRILLIUM-120PH broad band triaxial sensor by Nanometrics</Description>
+          <Model>TRILLIUM-120PH</Model>
+          <SerialNumber>000831</SerialNumber>
+        </Sensor>
+        <DataLogger>
+          <Description>CENTAUR data acquisition system by Nanometrics</Description>
+          <Model>CENTAUR</Model>
+          <SerialNumber>2724</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>481000000.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>meter per second (velocity)</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>digital counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
+    <Station code="OGJA" startDate="2017-08-10T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
+      <Latitude unit="DEGREES">44.910273</Latitude>
+      <Longitude unit="DEGREES">6.709738</Longitude>
+      <Elevation>2523.0</Elevation>
+      <Site>
+        <Name>fort Janus</Name>
+        <Description>administrative code : 05085</Description>
+        <Town>Montgenèvre</Town>
+        <County>Hautes-Alpes</County>
+        <Region>Provence-Alpes-Côte d'Azur</Region>
+        <Country>France</Country>
+      </Site>
+      <Operator>
+        <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
+        <Contact>
+          <Email>network.osug@resif.fr</Email>
+        </Contact>
+        <WebSite>https://www.osug.fr/missions/observation</WebSite>
+      </Operator>
+      <CreationDate>2017-08-10T00:00:00.000000Z</CreationDate>
+      <TotalNumberChannels>3</TotalNumberChannels>
+      <SelectedNumberChannels>1</SelectedNumberChannels>
+      <Channel code="HHZ" startDate="2020-10-01T14:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>STATUS: RLBP national</Value>
+          <BeginEffectiveTime>2020-10-01T14:00:00.000000Z</BeginEffectiveTime>
+          <Author>
+            <Name>Observatoire de la Côte d'Azur</Name>
+            <Email>network.oca@resif.fr</Email>
+          </Author>
+        </Comment>
+        <Latitude unit="DEGREES">44.910273</Latitude>
+        <Longitude unit="DEGREES">6.709738</Longitude>
+        <Elevation>2523.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Sensor>
+          <Description>STS-2 broad band triaxial sensor by Streckeisen</Description>
+          <Model>STS-2</Model>
+          <SerialNumber>99452</SerialNumber>
+        </Sensor>
+        <DataLogger>
+          <Description>CENTAUR data acquisition system by Nanometrics</Description>
+          <Model>CENTAUR</Model>
+          <SerialNumber>6682</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>600000000.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>meter per second (velocity)</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>digital counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
     <Station code="OGLC" startDate="1991-05-02T16:15:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
       <Latitude unit="DEGREES">44.370302</Latitude>
       <Longitude unit="DEGREES">6.074036</Longitude>
@@ -6074,7 +6739,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -6141,7 +6805,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -6150,9 +6813,9 @@
         <WebSite>https://www.osug.fr/missions/observation</WebSite>
       </Operator>
       <CreationDate>1996-10-07T12:00:00.000000Z</CreationDate>
-      <TotalNumberChannels>35</TotalNumberChannels>
+      <TotalNumberChannels>38</TotalNumberChannels>
       <SelectedNumberChannels>1</SelectedNumberChannels>
-      <Channel code="HHZ" startDate="2013-07-25T10:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
+      <Channel code="HHZ" startDate="2013-07-25T10:00:00.000000Z" endDate="2021-08-31T13:00:00.000000Z" restrictedStatus="open" locationCode="00">
         <Comment>
           <Value>STATUS: RLBP national</Value>
           <BeginEffectiveTime>2013-07-25T10:00:00.000000Z</BeginEffectiveTime>
@@ -6165,6 +6828,7 @@
         <Comment>
           <Value>STATUS: RLBP national</Value>
           <BeginEffectiveTime>2019-09-20T09:00:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2021-08-31T13:00:00.000000Z</EndEffectiveTime>
           <Author>
             <Name>Observatoire de la Côte d'Azur</Name>
             <Email>network.oca@resif.fr</Email>
@@ -6217,7 +6881,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -6284,7 +6947,6 @@
         <Region>Bourgogne-Franche-Comté</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -6294,7 +6956,51 @@
       </Operator>
       <CreationDate>2016-07-21T17:00:00.000000Z</CreationDate>
       <TotalNumberChannels>9</TotalNumberChannels>
-      <SelectedNumberChannels>1</SelectedNumberChannels>
+      <SelectedNumberChannels>2</SelectedNumberChannels>
+      <Channel code="HHZ" startDate="2018-12-04T11:00:00.000000Z" endDate="2020-01-09T11:51:00.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>STATUS: RLBP national</Value>
+          <BeginEffectiveTime>2018-12-04T11:00:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2020-01-09T11:51:00.000000Z</EndEffectiveTime>
+          <Author>
+            <Name>Observatoire de la Côte d'Azur</Name>
+            <Email>network.oca@resif.fr</Email>
+          </Author>
+        </Comment>
+        <Latitude unit="DEGREES">46.3459</Latitude>
+        <Longitude unit="DEGREES">4.7522</Longitude>
+        <Elevation>293.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Sensor>
+          <Description>STS-2 broad band triaxial sensor by Streckeisen</Description>
+          <Model>STS-2</Model>
+          <SerialNumber>100139</SerialNumber>
+        </Sensor>
+        <DataLogger>
+          <Description>CENTAUR data acquisition system by Nanometrics</Description>
+          <Model>CENTAUR</Model>
+          <SerialNumber>2777</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>600000000.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>meter per second (velocity)</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>digital counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
       <Channel code="HHZ" startDate="2020-01-09T16:21:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
         <Comment>
           <Value>STATUS: RLBP national</Value>
@@ -6351,7 +7057,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -6418,7 +7123,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -6494,7 +7198,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -6570,7 +7273,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -6637,7 +7339,6 @@
         <Region>Rhône-Alpes-Auvergne</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -6704,7 +7405,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -6771,7 +7471,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -6838,7 +7537,6 @@
         <Region>Bretagne</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
         <Contact>
@@ -6893,6 +7591,70 @@
         </Response>
       </Channel>
     </Station>
+    <Station code="OPS" startDate="2009-06-06T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
+      <Latitude unit="DEGREES">48.92126</Latitude>
+      <Longitude unit="DEGREES">7.88278</Longitude>
+      <Elevation>198.0</Elevation>
+      <Site>
+        <Name>OPS4</Name>
+        <Description>administrative code : 67474</Description>
+        <Town>Soultz-sous-Forêts</Town>
+        <County>Bas-Rhin</County>
+        <Region>Grand Est</Region>
+        <Country>France</Country>
+      </Site>
+      <Operator>
+        <Agency>ES Géothermie (ESG)</Agency>
+        <WebSite>https://geothermie.es.fr</WebSite>
+      </Operator>
+      <CreationDate>2009-06-06T00:00:00.000000Z</CreationDate>
+      <TotalNumberChannels>9</TotalNumberChannels>
+      <SelectedNumberChannels>1</SelectedNumberChannels>
+      <Channel code="HHZ" startDate="2017-11-28T15:00:00.000000Z" endDate="2021-01-21T15:30:00.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>STATUS: RLBP national</Value>
+          <BeginEffectiveTime>2017-11-28T15:00:00.000000Z</BeginEffectiveTime>
+          <EndEffectiveTime>2021-01-21T15:30:00.000000Z</EndEffectiveTime>
+          <Author>
+            <Name>Observatoire de la Côte d'Azur</Name>
+            <Email>network.oca@resif.fr</Email>
+          </Author>
+        </Comment>
+        <Latitude unit="DEGREES">48.92126</Latitude>
+        <Longitude unit="DEGREES">7.88278</Longitude>
+        <Elevation>198.0</Elevation>
+        <Depth>0.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">200.0</SampleRate>
+        <Sensor>
+          <Description>TRILLIUM-Compact broad band triaxial sensor by Nanometrics</Description>
+          <Model>TRILLIUM-Compact</Model>
+          <SerialNumber>004993</SerialNumber>
+        </Sensor>
+        <DataLogger>
+          <Description>CENTAUR data acquisition system by Nanometrics</Description>
+          <Model>CENTAUR</Model>
+          <SerialNumber>2979</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>303256554.38</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>meter per second (velocity)</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>digital counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
     <Station code="ORDF" startDate="1997-10-31T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
       <Latitude unit="DEGREES">43.2119</Latitude>
       <Longitude unit="DEGREES">-0.9372</Longitude>
@@ -6905,7 +7667,6 @@
         <Region>Nouvelle-Aquitaine</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -6972,7 +7733,6 @@
         <Region>Nouvelle-Aquitaine</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -7037,7 +7797,6 @@
         <Town>Escaldes-Engordany</Town>
         <Country>Andorre</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -7121,7 +7880,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -7197,7 +7955,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de Physique du Globe de Clermont-Ferrand (OPGC)</Agency>
         <Contact>
@@ -7264,7 +8021,6 @@
         <Region>Bretagne</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
         <Contact>
@@ -7349,7 +8105,6 @@
         <Region>Bretagne</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
         <Contact>
@@ -7416,7 +8171,6 @@
         <Region>Bourgogne-Franche-Comté</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -7483,7 +8237,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -7550,7 +8303,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -7617,7 +8369,6 @@
         <Region>Nouvelle-Aquitaine</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -7684,7 +8435,6 @@
         <Region>Bourgogne-Franche-Comté</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -7751,7 +8501,6 @@
         <Region>Bourgogne-Franche-Comté</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -7818,7 +8567,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -7885,7 +8633,6 @@
         <Region>Nouvelle-Aquitaine</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -7960,7 +8707,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Laboratoire Souterrain à Bas Bruit (UMS 3538 LSBB)</Agency>
         <Contact>
@@ -8282,7 +9028,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -8437,7 +9182,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -8540,7 +9284,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -8660,7 +9403,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -8727,7 +9469,6 @@
         <Region>Nouvelle-Aquitaine</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
         <Contact>
@@ -8794,7 +9535,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -8914,7 +9654,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -9071,7 +9810,6 @@
         <Region>Corse</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -9138,7 +9876,6 @@
         <Region>Pays de la Loire</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
         <Contact>
@@ -9223,7 +9960,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -9278,6 +10014,72 @@
         </Response>
       </Channel>
     </Station>
+    <Station code="SROF" startDate="2017-10-24T10:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
+      <Latitude unit="DEGREES">49.045121</Latitude>
+      <Longitude unit="DEGREES">-1.108844</Longitude>
+      <Elevation>87.0</Elevation>
+      <Site>
+        <Name>Saint-Romphaire</Name>
+        <Description>administrative code : 50546</Description>
+        <Town>Bourgvallées</Town>
+        <County>Manche</County>
+        <Region>Normandie</Region>
+        <Country>France</Country>
+      </Site>
+      <Operator>
+        <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
+        <Contact>
+          <Email>network.osuna@resif.fr</Email>
+        </Contact>
+        <WebSite>https://osuna.univ-nantes.fr/services-d-observation/rlbp/</WebSite>
+      </Operator>
+      <CreationDate>2017-10-24T10:00:00.000000Z</CreationDate>
+      <TotalNumberChannels>16</TotalNumberChannels>
+      <SelectedNumberChannels>1</SelectedNumberChannels>
+      <Channel code="HHZ" startDate="2019-11-27T12:12:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>STATUS: RLBP national</Value>
+          <BeginEffectiveTime>2019-11-27T12:12:00.000000Z</BeginEffectiveTime>
+          <Author>
+            <Name>Observatoire de la Côte d'Azur</Name>
+            <Email>network.oca@resif.fr</Email>
+          </Author>
+        </Comment>
+        <Latitude unit="DEGREES">49.045121</Latitude>
+        <Longitude unit="DEGREES">-1.108844</Longitude>
+        <Elevation>87.0</Elevation>
+        <Depth>11.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Sensor>
+          <Description>TRILLIUM-120PH broad band triaxial sensor by Nanometrics</Description>
+          <Model>TRILLIUM-120PH</Model>
+          <SerialNumber>000656</SerialNumber>
+        </Sensor>
+        <DataLogger>
+          <Description>CENTAUR data acquisition system by Nanometrics</Description>
+          <Model>CENTAUR</Model>
+          <SerialNumber>2932</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>481000000.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>meter per second (velocity)</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>digital counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
     <Station code="STR" startDate="1987-11-14T12:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
       <Latitude unit="DEGREES">48.5799</Latitude>
       <Longitude unit="DEGREES">7.7633</Longitude>
@@ -9290,7 +10092,6 @@
         <Region>Grand Est</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -9400,7 +10201,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers de Grenoble (OSUG)</Agency>
         <Contact>
@@ -9467,7 +10267,6 @@
         <Region>Grand Est</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -9586,7 +10385,6 @@
         <Region>Nouvelle-Aquitaine</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -9653,7 +10451,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de Recherche Méditerranéen de l'Environnement (OREME)</Agency>
         <WebSite>https://data.oreme.org/observation/rlbp</WebSite>
@@ -9744,7 +10541,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -9811,7 +10607,6 @@
         <Region>Pays de la Loire</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire des Sciences de l'Univers Nantes Atlantique (OSUNA)</Agency>
         <Contact>
@@ -9896,7 +10691,6 @@
         <Region>Provence-Alpes-Côte d'Azur</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de la Côte d'Azur (OCA)</Agency>
         <Contact>
@@ -9990,7 +10784,6 @@
         <Region>Nouvelle-Aquitaine</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -10109,7 +10902,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -10176,7 +10968,6 @@
         <Region>Auvergne-Rhône-Alpes</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire de Physique du Globe de Clermont-Ferrand (OPGC)</Agency>
         <Contact>
@@ -10243,7 +11034,6 @@
         <Region>Occitanie</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire Midi-Pyrénées (OMP)</Agency>
         <Contact>
@@ -10298,6 +11088,69 @@
         </Response>
       </Channel>
     </Station>
+    <Station code="VILS" startDate="2011-11-02T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
+      <Latitude unit="DEGREES">49.122</Latitude>
+      <Longitude unit="DEGREES">4.086</Longitude>
+      <Elevation>200.0</Elevation>
+      <Site>
+        <Name>Ville-en-Selve</Name>
+        <Description>administrative code : 51623</Description>
+        <Town>Ville-en-Selve</Town>
+        <County>Marne</County>
+        <Region>Grand Est</Region>
+        <Country>France</Country>
+      </Site>
+      <Operator>
+        <Agency>Institut de Physique du Globe de Paris (IPGP)</Agency>
+        <WebSite>https://www.ipgp.fr</WebSite>
+      </Operator>
+      <CreationDate>2011-11-02T00:00:00.000000Z</CreationDate>
+      <TotalNumberChannels>6</TotalNumberChannels>
+      <SelectedNumberChannels>1</SelectedNumberChannels>
+      <Channel code="HHZ" startDate="2020-07-03T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open" locationCode="00">
+        <Comment>
+          <Value>STATUS: RLBP national</Value>
+          <BeginEffectiveTime>2020-07-03T00:00:00.000000Z</BeginEffectiveTime>
+          <Author>
+            <Name>Observatoire de la Côte d'Azur</Name>
+            <Email>network.oca@resif.fr</Email>
+          </Author>
+        </Comment>
+        <Latitude unit="DEGREES">49.122</Latitude>
+        <Longitude unit="DEGREES">4.086</Longitude>
+        <Elevation>200.0</Elevation>
+        <Depth>12.0</Depth>
+        <Azimuth unit="DEGREES">0.0</Azimuth>
+        <Dip unit="DEGREES">-90.0</Dip>
+        <Type>CONTINUOUS</Type>
+        <Type>GEOPHYSICAL</Type>
+        <SampleRate unit="SAMPLES/S">100.0</SampleRate>
+        <Sensor>
+          <Description>TRILLIUM-120PH broad band triaxial sensor by Nanometrics</Description>
+          <Model>TRILLIUM-120PH</Model>
+          <SerialNumber>000665</SerialNumber>
+        </Sensor>
+        <DataLogger>
+          <Description>CENTAUR data acquisition system by Nanometrics</Description>
+          <Model>CENTAUR</Model>
+          <SerialNumber>2930</SerialNumber>
+        </DataLogger>
+        <Response>
+          <InstrumentSensitivity>
+            <Value>481000000.0</Value>
+            <Frequency>1.0</Frequency>
+            <InputUnits>
+              <Name>m/s</Name>
+              <Description>meter per second (velocity)</Description>
+            </InputUnits>
+            <OutputUnits>
+              <Name>count</Name>
+              <Description>digital counts</Description>
+            </OutputUnits>
+          </InstrumentSensitivity>
+        </Response>
+      </Channel>
+    </Station>
     <Station code="VOEL" startDate="2015-11-27T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
       <Latitude unit="DEGREES">48.966744</Latitude>
       <Longitude unit="DEGREES">7.12266</Longitude>
@@ -10310,7 +11163,6 @@
         <Region>Grand Est</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -10377,7 +11229,6 @@
         <Region>Grand Est</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -10444,7 +11295,6 @@
         <Region>Grand Est</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -10555,7 +11405,6 @@
         <Region>Grand Est</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -10631,7 +11480,6 @@
         <Region>Grand Est</Region>
         <Country>France</Country>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Ecole et Observatoire des Sciences de la Terre (EOST)</Agency>
         <Contact>
@@ -10830,7 +11678,6 @@
       <Site>
         <Name>Tunnel de Badole - Saint Sauveur en Rue, France</Name>
       </Site>
-      <Geology>Unknown</Geology>
       <Operator>
         <Agency>Observatoire GEOSCOPE</Agency>
         <WebSite>http://geoscope.ipgp.fr</WebSite>
@@ -10896,9 +11743,6 @@
   <Network code="RD" startDate="1962-01-01T00:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
     <Description>CEA/DASE broad-band permanent network</Description>
     <Identifier type="DOI">10.15778/RESIF.RD</Identifier>
-    <Comment>
-      <Value>DOI:http://dx.doi.org/10.15778/RESIF.RD</Value>
-    </Comment>
     <TotalNumberStations>19</TotalNumberStations>
     <SelectedNumberStations>2</SelectedNumberStations>
     <Station code="ETNF" startDate="2018-04-01T08:00:00.000000Z" endDate="2500-12-31T23:59:59.000000Z" restrictedStatus="open">
@@ -10908,7 +11752,6 @@
       <Site>
         <Name>Estrennes, France</Name>
       </Site>
-      <Geology>Unknown</Geology>
       <CreationDate>2018-04-01T08:00:00.000000Z</CreationDate>
       <TotalNumberChannels>3</TotalNumberChannels>
       <SelectedNumberChannels>1</SelectedNumberChannels>
@@ -10950,7 +11793,6 @@
       <Site>
         <Name>Savonnieres en Perthois, Champagne-Ardenne, France</Name>
       </Site>
-      <Geology>Unknown</Geology>
       <CreationDate>2018-08-09T08:00:00.000000Z</CreationDate>
       <TotalNumberChannels>3</TotalNumberChannels>
       <SelectedNumberChannels>1</SelectedNumberChannels>
