@@ -498,7 +498,8 @@ def hourly_var(noise, periods):
     ### Conversion des heures en heures locales
     L = len(noise.index.values)
     utc_list = [ UTCDateTime(str(noise.index.values[i])) for i in range(L) ]
-    local_list = UTCToLocal(utc_list)
+    # local_list = UTCToLocal(utc_list)
+    local_list = utc_list
     local_list = [ np.datetime64(local_list[i].strftime("%Y-%m-%dT%H:%M:%S.%fZ")) for i in range(L) ]
     local_list = np.asarray(local_list, dtype='datetime64[ns]')
 
