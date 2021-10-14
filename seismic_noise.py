@@ -507,6 +507,8 @@ def hourly_var(noise, periods):
     for i in range(L):
         new_noise.iloc(0)[i] = noise.iloc(0)[i]
     noise = new_noise
+    
+    # noise = noise.copy().tz_localize("UTC").tz_convert("Europe/Brussels").tz_localize(None).resample("30Min").mean()
 
 
     ### Création du vecteur temporel
