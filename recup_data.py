@@ -46,9 +46,9 @@ dl_noise = False                   # Téléchargement des données
 proc_PPSD = False                  # Calcul des PPSDs
 proc_DRMS = True                  # Calcul du déplacement RMS
 delete_MSEED = False              # Suppression des fichiers MSEED
-PPSD_FOLDER  = "/media/flavien/Stockage/SeismicNoiseData/PPSD"
-DRMS_FOLDER  = "/media/flavien/Stockage/SeismicNoiseData/DRMS"
-MSEED_FOLDER = "/media/flavien/Stockage/SeismicNoiseData/MSEED"
+PPSD_FOLDER  = "/media/flavien/Flavien USB/Stages/noise_data/PPSD"
+DRMS_FOLDER  = "/media/flavien/Flavien USB/Stages/noise_data/DRMS"
+MSEED_FOLDER = "/media/flavien/Flavien USB/Stages/noise_data/MSEED"
 freqs = [(0.01, 0.03), (0.1, 0.25), (0.3, 1), (1, 3), (5, 15), (20, 50)]                 # Bandes de fréquence à étudier
 
 
@@ -57,8 +57,8 @@ freqs = [(0.01, 0.03), (0.1, 0.25), (0.3, 1), (1, 3), (5, 15), (20, 50)]        
 # Entrées dans le programme directement     #
 #############################################
 
-start_date = "2020-01-01"    # Date de début
-end_date = "2021-01-01"      # Date de fin
+start_date = "2019-01-01"    # Date de début
+end_date = "2021-08-01"      # Date de fin
 st_file = "DATA/st_metadata/stations_fr.txt"  # Fichier de stations
 
 
@@ -107,8 +107,9 @@ k = 1
 for station_str in all_stations:
     
     PPSD_FILES  = PPSD_FOLDER  + "/{}/".format(station_str)
-    DRMS_FILES  = DRMS_FOLDER  + "/{}/".format(station_str)
     MSEED_FILES = MSEED_FOLDER + "/{}/".format(station_str)
+    if not os.path.exists(PPSD_FILES):  os.makedirs(PPSD_FILES)
+    if not os.path.exists(MSEED_FILES):  os.makedirs(MSEED_FILES)
     print("[{}] [INFO] Station {}/{} {}".format(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), k, len(all_stations), station_str))
     
     ### Téléchargement des données
@@ -119,7 +120,7 @@ for station_str in all_stations:
     ### Téléchargement des PPSDs
     if dl_PPSD:
         print("[{}] [INFO]     Collecting PPSDs ... ".format(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
-        filename = PPSD_FOLDER + 'data.zip'
+        filename = PPSD_FILES + 'data.zip'
         net, sta, loc, cha = tuple(station_str.split("."))
         url = "https://ws.resif.fr/resifws/ppsd/1/query?net={}&sta={}&loc={}&cha={}&starttime={}&endtime={}&format=npz&nodata=404".format(net,sta,loc,cha,start_date,end_date)
         try:
@@ -128,7 +129,7 @@ for station_str in all_stations:
             pass
         else:
             with zipfile.ZipFile(filename, 'r') as zip_ref:
-                zip_ref.extractall(PPSD_FOLDER)
+                zip_ref.extractall(PPSD_FILES)
             os.remove(filename)
     
     ### Calcul des PPSDs
