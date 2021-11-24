@@ -26,13 +26,6 @@ from obspy.clients.fdsn import Client
 from obspy.clients.fdsn.client import FDSNNoDataException
 from obspy.signal import PPSD
 
-# try:
-#     os.environ['PROJ_LIB'] = '/home/flavien/anaconda3/envs/SeismicNoise/share/proj'
-# except:
-#     pass
-
-from mpl_toolkits.basemap import Basemap
-
 from seismosocialdistancing import *
 
 
@@ -410,77 +403,6 @@ def process_DRMS(ppsds, freqs, folder_out):
     
     del displacement_RMS
     
-    
-    
-def create_map(latmin=41, latmax=52,
-               lonmin=-5, lonmax=11,
-               resol="i",
-               resol_pixels=500,
-               style=None,
-               bar_width = 500,
-               bar_pos = 3):
-    
-    
-    # Définition du type de carte
-    m = Basemap(llcrnrlon=lonmin,llcrnrlat=latmin,urcrnrlon=lonmax,urcrnrlat=latmax,\
-                width=12000000,height=9000000,\
-                rsphere=(6378137.00,6356752.3142), epsg=5520,\
-                resolution=resol,area_thresh=1000.,projection='cyl',\
-                lat_1=latmin,lat_2=lonmin,lat_0=latmax,lon_0=lonmax)
-    
-    
-    if style==None:
-        m.drawmapboundary(fill_color='#85C1E9')
-        m.fillcontinents(color='#AB8D52',lake_color='#85C1E9')
-    else:
-        m.arcgisimage(service=style, xpixels = resol_pixels, verbose= True)
-        """
-        Services :
-        - World_Physical_Map
-        - World_Shaded_Relief
-        - World_Topo_Map
-        - NatGeo_World_Map
-        - ESRI_Imagery_World_2D
-        - World_Street_Map
-        - World_Imagery
-        - ESRI_StreetMap_World_2D
-        - Ocean_Basemap
-        """
-    
-        
-    try:
-        m.drawcountries(linewidth=1, zorder=10)
-    except:
-        pass
-    
-    try:
-        m.drawcoastlines(linewidth=1, zorder=10)
-    except:
-        pass
-    
-    parallels = np.arange(latmin, latmax,2.)
-    meridians = np.arange(lonmin, lonmax,2.)
-    m.drawparallels(parallels,labels=[False,True,True,False], color="gray", zorder=1, linewidth=1)
-    m.drawmeridians(meridians,labels=[False,True,True,False], color="gray", zorder=1, linewidth=1)
-    
-    
-    # Positionnement dans les coins
-    if bar_pos==1:
-        a, b, c = -0.35, +1, 95
-    elif bar_pos==2:
-        a, b, c = 0.5, -1, 95
-    elif bar_pos==3:
-        a, b, c = -0.35, +1, 8
-    else:
-        a, b, c = 0.36, -1, 7
-    
-    lat_pos = np.linspace(latmin, latmax, 100)[c]
-    lon_pos = a*abs(lonmax-lonmin) + b*bar_width/111.0/2.0 + 4.2e-2*lat_pos
-    
-    m.drawmapscale(lon_pos, lat_pos, lon_pos, lat_pos, bar_width, barstyle='fancy', zorder=100, yoffset=1500*abs(latmax-latmin))
-    
-    return m
-
 
 
 def hourly_var(noise, periods):
